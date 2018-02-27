@@ -1,38 +1,66 @@
-#topBar {
-  background-image: url("Images/topBanner(noLogo).png");
-  width:1920px;
-  height: 300px;
+#topBar{
+    background-image: url("Images/TempTopBanner+Logo.png")
+
+}
+
+#navBar{
+
+}
+
+#navBar ul .leftNav{
+    display: -webkit-flex;
+    display: flex;
+
+}
+
+#navBar ul .rightNav{
+
+}
+
+#navBar ul{
+  style: none;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
-#topBar a{
-  font-size: 30px;
-}
-
-#logo{
-
-}
-
-#Left{
-    float: left;
-}
-
-#Right{
-  float: right;
-}
-
-ul{
-  
-  list-style: none;
-  padding:0;
-}
-
-li{
+#navBar ul li{
   display: inline;
+  color: green;
 }
+
+#navBar a{
+  text-decoration: none;
+  color: green;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
   position: absolute;
