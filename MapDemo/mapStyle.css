@@ -1,0 +1,17 @@
+body{
+  margin: auto;
+  width: 80%;
+}
+
+header, form, #map, #search{
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  background-color: grey;
+  border: none;
+}

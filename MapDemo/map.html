@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Map </title>
+  <!-- link the scripts and stylesheets the html uses -->
+  <script type = "text/javascript" src = "placesApi.js"></script>
+  <link rel = "stylesheet" href = "mapStyle.css">
+</head>
+
+<body>
+
+  <!-- places the initialized map in the div  -->
+  <div id = "map"></div>
+
+  <!--search bar -->
+  <div id = "search">
+    <input id = "address" type = "textbox"  onkeydown = "checkSubmit()" size = "50">
+    <input type = "button" value = "Search" onclick = "codeAddress()">
+  </div>
+
+
+<!-- key to allow the html to run the google places api -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap">
+  </script>
+
+</body>
