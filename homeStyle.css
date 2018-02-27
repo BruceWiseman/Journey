@@ -1,11 +1,40 @@
-img{
-  padding: "0px";
-  margin: "0px";
-  width: "1080px";
+#topBar {
+  background-image: url("Images/topBanner(noLogo).png");
+  width:1920px;
+  height: 300px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-html{
-  border: "0px";
-  margin: "0px";
-  padding: "0px";
+#topBar a{
+  font-size: 30px;
+}
+
+#logo{
+
+}
+
+#Left{
+    float: left;
+}
+
+#Right{
+  float: right;
+}
+
+ul{
+  
+  list-style: none;
+  padding:0;
+}
+
+li{
+  display: inline;
+}
+
+footer{
+  position: absolute;
+  bottom:0;
 }
