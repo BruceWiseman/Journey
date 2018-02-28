@@ -1,3 +1,16 @@
+* {
+margin: 0;
+}
+
+html {
+margin: 0;
+background-color: red;
+}
+
+body {
+margin: 0;
+}
+
 #topBar{
 
 }
@@ -5,8 +18,8 @@
 #navBar{
     background-image: url("Images/topBanner.png");
     background-repeat: no-repeat;
-    background-size: 100% 65%;
-    height: 288px;
+    background-size: 100% 190px;
+    height: 190px;
 
 }
 
@@ -25,7 +38,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  list-style: none;
+
+  justify-content: space-around;
   align-items: flex-start;
 
 }
@@ -49,6 +64,8 @@
 }
 
 footer{
-  position: absolute;
-  bottom:0;
+  margin: 0;
+  position:fixed;
+  width: 100%;
+  bottom:0px;
 }
