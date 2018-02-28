@@ -5,9 +5,10 @@
 #navBar{
     background-image: url("Images/topBanner(noLogo).png");
     background-repeat: no-repeat;
-    background-size: 100% 65%;
-    height: 288px;
+    background-size: contain;
+    width: 100%;
 
+    position: fixed;
 }
 
 
@@ -18,7 +19,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items:flex-start;
 }
 
@@ -76,6 +77,10 @@
 
 
 footer{
+  background-image: url("Images/bottomBanner.png");
+  background-repeat: no-repeat;
+  
   position: absolute;
   bottom:0;
+  length: 50%;
 }
