@@ -3,68 +3,92 @@ margin: 0;
 }
 
 html {
-margin: 0;
-background-image: url("Images/Map.png");
+background-image: url("Images/Map.png") ;
 }
 
-body {
-margin: 0;
+#topBanner{
+  position: absolute;
+  width: 100%;
+  height: 162px;
+  margin: 0;
+  z-index: 1;
+  opacity: 0.8;
+  vertical-align: middle;
 }
 
-#navBar{
-    background-image: url("Images/topBanner.png");
-    opacity: 0.95;
-    background-repeat: no-repeat;
-    background-size: 100% 190px;
-    height: 190px;
+#navBarLeft ul{
+  position: absolute;
+  z-index: 2;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 25px;
+  float: left;
 }
 
-#navbar ul{
-
-
+#navBarRight ul{
+  position: relative;
+  z-index: 2;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 25px;
+  float:right;
 }
 
-#navBar ul .leftNav{
-    margin-right: 90px;
+#navBarLeft .leftNav{
+  margin-right: 90px;
+
+}
+#navBarRight .rightNav{
+  margin-left: 90px;
+  margin-right: 20px;
 }
 
-#navBar ul .rightNav{
-    margin-left: 90px;
-    margin-top: 200px;
-}
 
-#navBar ul .logoNav{
-    margin-left: 460px;
-    margin-right: 460px;
-}
-
-#navBar ul li{
-  display:inline;
-  color:green;
-}
-
-#navBar a{
+#navBarLeft a{
+  z-index: 2;
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
-  font-size: 19px;
+  font-size: 20px;
+  font-weight: 550;
+}
+#navBarRight a{
+  z-index: 2;
+  font-family: "Century Gothic";
+  text-decoration: none;
+  color: #39B54A;
+  font-size: 20px;
   font-weight: 550;
 }
 
-#navBar a:hover{
+#navBarLeft a:hover{
+  text-decoration: underline;
+}
+#navBarRight a:hover{
   text-decoration: underline;
 }
 
-#logoImg{
-  width: 17%;
-  height: 17%;
+#logo{
+  position: relative;
+  width: auto;
+  height: 155px;
+  display:block;
+  vertical-align: middle;
+  margin-right: 820px;
+  margin-left: 820px;
+  top: 2px;
+  z-index: 2;
 }
 
-footer{
-  background-image: url("Images/bottomBanner.png");
-  height: 50px;
+#bottomBanner{
+  position: absolute;
   width: 100%;
-  position:absolute;
-  margin: 0px;
+  height: 50px;
+  margin: 0;
   bottom: 0px;
+  z-index: 100;
 }
