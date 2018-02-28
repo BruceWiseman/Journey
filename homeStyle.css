@@ -13,16 +13,15 @@ margin: 0;
 
 #navBar{
     background-image: url("Images/topBanner.png");
+    opacity: 0.95;
     background-repeat: no-repeat;
     background-size: 100% 190px;
     height: 190px;
-
-    align-items: baseline;
 }
 
 #navbar ul{
-    display: -webkit-flex;
-    display: flex;
+
+
 }
 
 #navBar ul .leftNav{
@@ -31,6 +30,7 @@ margin: 0;
 
 #navBar ul .rightNav{
     margin-left: 90px;
+    margin-top: 200px;
 }
 
 #navBar ul .logoNav{
