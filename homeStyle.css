@@ -12,7 +12,6 @@
 #navBar ul .leftNav{
     display: -webkit-flex;
     display: flex;
-
 }
 
 #navBar ul .rightNav{
@@ -26,8 +25,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-
-
 }
 
 #navBar ul li{
@@ -48,28 +45,6 @@
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
   position: absolute;
