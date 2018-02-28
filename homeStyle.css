@@ -3,7 +3,7 @@
 }
 
 #navBar{
-    background-image: url("Images/topBanner(noLogo).png");
+    background-image: url("Images/topBanner.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -79,7 +79,7 @@
 footer{
   background-image: url("Images/bottomBanner.png");
   background-repeat: no-repeat;
-  
+
   position: absolute;
   bottom:0;
   length: 50%;
