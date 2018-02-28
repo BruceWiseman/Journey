@@ -9,10 +9,10 @@ background-image: url("Images/Map.png") ;
 #topBanner{
   position: absolute;
   width: 100%;
-  height: 162px;
+  height: 200px;
   margin: 0;
-  z-index: 1;
-  opacity: 0.8;
+  z-index: 2;
+  opacity: 0.9;
   vertical-align: middle;
 }
 
@@ -29,7 +29,7 @@ background-image: url("Images/Map.png") ;
 
 #navBarRight ul{
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -49,7 +49,7 @@ background-image: url("Images/Map.png") ;
 
 
 #navBarLeft a{
-  z-index: 2;
+  z-index: 3;
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
@@ -57,7 +57,7 @@ background-image: url("Images/Map.png") ;
   font-weight: 550;
 }
 #navBarRight a{
-  z-index: 2;
+  z-index: 3;
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
@@ -75,20 +75,30 @@ background-image: url("Images/Map.png") ;
 #logo{
   position: relative;
   width: auto;
-  height: 155px;
+  height: 150px;
   display:block;
   vertical-align: middle;
   margin-right: 820px;
   margin-left: 820px;
   top: 2px;
-  z-index: 2;
+  z-index: 4;
 }
 
 #bottomBanner{
+  opacity: 0.75;
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 126px;
   margin: 0;
   bottom: 0px;
-  z-index: 100;
+  z-index: 2;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  border: none;
+  z-index: 1;
 }
