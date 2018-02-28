@@ -4,15 +4,11 @@ margin: 0;
 
 html {
 margin: 0;
-background-color: lightGreen;
+background-image: url("Images/Map.png");
 }
 
 body {
 margin: 0;
-}
-
-#topBar{
-
 }
 
 #navBar{
@@ -20,49 +16,48 @@ margin: 0;
     background-repeat: no-repeat;
     background-size: 100% 190px;
     height: 190px;
+
+    align-items: baseline;
 }
 
 #navbar ul{
     display: -webkit-flex;
     display: flex;
-    flex-direction: row;
 }
 
 #navBar ul .leftNav{
-    margin-right: 100px;
-    margin-bottom: auto;
+    margin-right: 90px;
 }
 
 #navBar ul .rightNav{
-    margin-left: 100px;
-
+    margin-left: 90px;
 }
 
 #navBar ul .logoNav{
-    margin-left: 450px;
-    margin-right: 450px;
-
+    margin-left: 460px;
+    margin-right: 460px;
 }
 
 #navBar ul li{
-  display: inline;
-  color: green;
+  display:inline;
+  color:green;
 }
 
 #navBar a{
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 550;
 }
+
 #navBar a:hover{
   text-decoration: underline;
 }
 
 #logoImg{
-  width: 16%;
-  height: 16%;
+  width: 17%;
+  height: 17%;
 }
 
 footer{
