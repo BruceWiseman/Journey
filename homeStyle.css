@@ -6,7 +6,11 @@ html {
 background-image: url("Images/Map.png") ;
 }
 
+body{
+  margin: auto;
+}
 #topBanner{
+  pointer-events: none;
   position: absolute;
   width: 100%;
   height: 200px;
@@ -29,7 +33,7 @@ background-image: url("Images/Map.png") ;
 
 #navBarRight ul{
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -73,18 +77,20 @@ background-image: url("Images/Map.png") ;
 }
 
 #logo{
-  position: relative;
-  width: auto;
+  pointer-events: none;
+
   height: 150px;
-  display:block;
-  vertical-align: middle;
-  margin-right: 820px;
-  margin-left: 820px;
-  top: 2px;
-  z-index: 4;
+  position: absolute;
+  z-index: 6;
+
+  display: block;
+  margin-left: 830px;
+  margin-right: 830px;
+
 }
 
 #bottomBanner{
+  pointer-events: none;
   opacity: 0.75;
   position: absolute;
   width: 100%;
