@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <title>Journey - Map Page</title>
   <link rel="stylesheet" type="text/css" href="homeStyle.css">
-  <script type = "text/javascript" src = "MapDemo/placesApi.js"></script>
+  <script type = "text/javascript" src = "Api/placesApi.js"></script>
 </head>
 
 <body>
-
-<img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
-
+  <a href = #>
+    <img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
+  </a>
 <div id = "Header and footer">
 <img id = "topBanner" src="Images/topBanner.png" alt="top"></img>
-
   <header>
-
     <nav id="navBarLeft">
       <ul>
         <li class="leftNav"><a href="#">Home</a></li>
@@ -30,20 +28,16 @@
       </ul>
     </nav>
   </header>
-
-
-
   <img id = "bottomBanner" src="Images\bottomBanner.png" alt="bottom"></img>
 </div>
 
-<div id="map">
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
 
-</div>
 
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap">
-</script>
-
+<div id="searchArea">
+    <p id="searchAreaTitle">Find attractions near you...</p>
+    <input id="address" type = "text" placeholder = "Enter the name of a place..." onkeydown = "checkSubmit()"><br>
 </body>
 
 </html>

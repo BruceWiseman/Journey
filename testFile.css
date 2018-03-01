@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #logo{
   pointer-events: none;
 
@@ -9,3 +10,13 @@
   /* position: absolute;
   z-index: 4; */
   }
+=======
+#searchBox {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #13b4ff;
+}
+>>>>>>> 3f700cc4d197f4b895be131c712785aa46a8f2ed
