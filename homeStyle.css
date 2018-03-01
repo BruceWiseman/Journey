@@ -75,7 +75,7 @@ html {
 
 #logo{
   position: absolute;
-  pointer-events: none;
+
   height: 15%;
   display: block;
   margin-left: 42.5%;
@@ -104,24 +104,36 @@ html {
   opacity: 1;
 }
 
-#searchBox {
+#searchArea {
   position: absolute;
   z-index: 8;
   float: left;
   width: 20%;
-  height: 40%;
-  margin-top: 80px;
+  height: auto;
+  margin-top: 4%;
   margin-left: 35px;
   border: 2px solid rgba(10,10,10, .3);
   background: rgba(235,235,235,.7);
-
 }
 
-#title{
-  margin: 5%;
+#searchAreaTitle{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
   font-size: 16px;
   font-weight: 550;
+}
+
+#searchBox{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  font-family: "Century Gothic";
+  font-size: 80%;
+  width: 88%;
+  opacity: 0.85;
 }
