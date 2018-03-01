@@ -74,17 +74,15 @@ html {
 }
 
 #logo{
-  pointer-events: none;
-
-  height: 15%;
   position: absolute;
-  z-index: 6;
-
+  pointer-events: none;
+  height: 15%;
   display: block;
   /*margin-left: 830px;*/
   margin-left: 42.5%;
   /*margin-right: 830px;*/
   width: 15%;
+  z-index: 6;
 
 }
 
@@ -106,4 +104,18 @@ html {
   background-color: grey;
   border: none;
   z-index: 1;
+  opacity: 1;
+}
+
+#searchBox {
+  position: absolute;
+  z-index: 8;
+  float: left;
+  width: 400px;
+  height: 500px;
+  margin-top: 4%;
+  margin-left: 35px;
+  border: 2px solid rgba(10,10,10, .3);
+  background: lightGrey;
+  opacity: 0.60;
 }
