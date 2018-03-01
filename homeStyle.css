@@ -84,8 +84,10 @@ body{
   z-index: 6;
 
   display: block;
-  margin-left: 830px;
-  margin-right: 830px;
+  /*margin-left: 830px;*/
+  margin-left: 45%;
+  /*margin-right: 830px;*/
+  width: 10%;
 
 }
 
