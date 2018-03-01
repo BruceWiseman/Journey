@@ -3,12 +3,9 @@ margin: 0;
 }
 
 html {
-background-image: url("Images/Map.png") ;
+
 }
 
-body{
-  margin: auto;
-}
 #topBanner{
   pointer-events: none;
   position: absolute;
