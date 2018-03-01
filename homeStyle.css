@@ -1,3 +1,9 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
 #topBar{
 
 }
@@ -27,7 +33,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
 
 }
 
@@ -73,7 +78,8 @@
 
 
 footer{
-
+  display: -webkit-flex;
+  display: flex;
   position: absolute;
   bottom:0;
 }
