@@ -56,7 +56,7 @@ body{
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
-  font-size: auto;
+  font-size: 18px;
   font-weight: 550;
 }
 #navBarRight a{
@@ -64,7 +64,7 @@ body{
   font-family: "Century Gothic";
   text-decoration: none;
   color: #39B54A;
-  font-size: auto;
+  font-size: 18px;
   font-weight: 550;
 }
 #navBarLeft a:hover{
@@ -74,7 +74,7 @@ body{
   text-decoration: underline;
 }
 #Temp{
-  
+
 }
 #logo{
   position: absolute;
