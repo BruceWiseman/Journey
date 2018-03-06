@@ -113,7 +113,6 @@ body{
   display: -webkit-flex;
   display: flex;
   vertical-align: middle;
-  flex-wrap: wrap;
 }
 .post{
   padding: 70px;
@@ -155,6 +154,7 @@ body{
 
 #address{
   font-family: "Century Gothic";
+  color: grey;
   width: 40%;
   opacity: 0.85;
   height: 40px;
