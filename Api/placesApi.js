@@ -8,9 +8,9 @@ function initMap() {
   var aberdeen = {lat: 57.1497, lng: -2.0943};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
-    center: aberdeen
-    }
-  );
+    center: aberdeen,
+    disableDefaultUI: true
+    });
 /*
 //add market on map
   var marker = new google.maps.Marker({
