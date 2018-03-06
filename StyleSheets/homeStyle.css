@@ -96,6 +96,7 @@ body{
   margin: 0;
   bottom: 0px;
   z-index: 2;
+  min-width: 1000px;
 }
 
 /*Home page specific*/
