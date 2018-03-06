@@ -1,6 +1,5 @@
 * {
 margin: 0;
-  background-color: blue;
 }
 
 
@@ -11,7 +10,6 @@ body{
   min-width:1000px;
   width: auto !important;
   width:1000px;
-
 }
 
 
