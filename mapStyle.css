@@ -73,13 +73,17 @@ body{
 #navBarRight a:hover{
   text-decoration: underline;
 }
+#Temp{
+  
+}
 #logo{
   position: absolute;
   height: auto%;
   display: block;
-  margin-left: 42.5%;
+  margin-left: 43.5%;
   width: 13%;
   z-index: 6;
+  min-width: 130px;
 }
 
 
@@ -121,6 +125,7 @@ body{
   border: 2px solid rgba(10,10,10, .3);
   background: rgba(235,235,235,.7);
   min-width: 250px;
+
 }
 #searchAreaTitle{
   margin-left: 5%;
