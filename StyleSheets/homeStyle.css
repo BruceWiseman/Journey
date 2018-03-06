@@ -98,12 +98,57 @@ body{
 }
 
 /*home page specific*/
-#temp{
-  position: absolute;
-  z-index: 10;
-  font-size: 20px;
+.content{
+  margin-top: 200px;
+}
+.post{
+  padding: 70px;
+  padding-top: 10px;
+}
+
+#pageContent{
+  height: 100%;
+  padding: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#bubbleImage{
+  display: block;
+  margin: auto;
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+  border: 5px solid #39B54A;
+  background-color: green;
+}
+
+.infoHead{
   font-family: "Century Gothic";
   color: #39B54A;
-  margin-top: 25%;
-  margin-left: 44%;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  margin:0;
+  font-size: 35px;
+}
+
+.topicHead{
+  font-family: "Century Gothic";
+  color: #39B54A;
+  text-align: center;
+  padding-top: 4%;
+}
+
+.topicText{
+  font-family: "Century Gothic";
+  color: grey;
+  text-align: center;
+  width: 250px;
 }
