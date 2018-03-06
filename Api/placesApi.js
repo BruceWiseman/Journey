@@ -5,9 +5,9 @@ var map;
 
 function initMap() {
   geocoder = new google.maps.Geocoder();
-  var scotland = {lat: 56.490605, lng: -4.199545};
+  var scotland = {lat: 57.490605, lng: -4.199545};
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6.25,
+    zoom: 7,
     center: scotland,
     disableDefaultUI: true
     });
