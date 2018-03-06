@@ -85,7 +85,7 @@ body{
 }
 
 
-/*BottomBanner*/
+/*Bottom banner*/
 #bottomBanner{
   pointer-events: none;
   opacity: 0.75;
@@ -97,18 +97,22 @@ body{
   z-index: 2;
 }
 
-/*home page specific*/
-.content{
-  margin-top: 200px;
+/*Home page specific*/
+.infoHead{
+  /*background: rgba(235,235,235,.7);*/
+  /*border: 2px solid rgba(10,10,10, .3);*/
+  font-family: "Century Gothic";
+  color: #39B54A;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10px;
+  font-size: 35px;
 }
-.post{
-  padding: 70px;
-  padding-top: 10px;
-}
-
 #pageContent{
+  /*background: rgba(235,235,235,.7);*/
+  /*border: 2px solid rgba(10,10,10, .3);*/
   height: 100%;
-  padding: 16px;
+  margin: 16px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -118,7 +122,10 @@ body{
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.post{
+  padding: 70px;
+  padding-top: 20px;
+}
 #bubbleImage{
   display: block;
   margin: auto;
@@ -126,26 +133,14 @@ body{
   height:250px;
   border-radius: 50%;
   border: 5px solid #39B54A;
-  background-color: green;
+  background-color: grey;
 }
-
-.infoHead{
-  font-family: "Century Gothic";
-  color: #39B54A;
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  margin:0;
-  font-size: 35px;
-}
-
 .topicHead{
   font-family: "Century Gothic";
   color: #39B54A;
   text-align: center;
   padding-top: 4%;
 }
-
 .topicText{
   font-family: "Century Gothic";
   color: grey;

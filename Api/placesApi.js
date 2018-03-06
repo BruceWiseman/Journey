@@ -5,10 +5,10 @@ var map;
 
 function initMap() {
   geocoder = new google.maps.Geocoder();
-  var aberdeen = {lat: 57.1497, lng: -2.0943};
+  var scotland = {lat: 56.490605, lng: -4.199545};
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: aberdeen,
+    zoom: 6.25,
+    center: scotland,
     disableDefaultUI: true
     });
 /*
