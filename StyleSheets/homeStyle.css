@@ -105,24 +105,27 @@ body{
   /*border: 2px solid rgba(10,10,10, .3);*/
   position: absolute;
   z-index: 0;
-  margin-top: 10%;
-  margin-left: 18.5%;
+  margin-top: 7.5%;
+  margin-left: 10%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   vertical-align: middle;
+  width: 80%;
+  height: auto;
+  min-width: 800px;
 }
 .post{
-  padding: 70px;
-  padding-top: 20px;
+  padding: 4%;
+  padding-top: 2%;
 }
-#bubbleImage{
+.bubbleImage{
   display: block;
   margin: auto;
-  width:250px;
-  height:250px;
+  width:80%;
+  height:auto;
   border-radius: 50%;
   border: 5px solid #39B54A;
   background-color: grey;
@@ -137,7 +140,7 @@ body{
   font-family: "Century Gothic";
   color: grey;
   text-align: center;
-  width: 250px;
+  width: 100%;
 }
 
 /*search area*/
@@ -147,7 +150,7 @@ body{
   font-family: "Century Gothic";
   color: #39B54A;
   text-align: center;
-  padding-top: 32%;
+  padding-top: 36.5%;
   padding-bottom: 10px;
   font-size: 35px;
 }
