@@ -1,14 +1,17 @@
 * {
 margin: 0;
+  background-color: blue;
 }
 
+
 html {
-  background-color: blue;
+
 }
 body{
   min-width:1000px;
   width: auto !important;
   width:1000px;
+
 }
 
 
@@ -72,9 +75,6 @@ body{
 }
 #navBarRight a:hover{
   text-decoration: underline;
-}
-#Temp{
-
 }
 #logo{
   position: absolute;
