@@ -100,71 +100,193 @@ body{
 }
 
 /*Home page specific*/
-/*Bubbles*/
+
+/* -----------------------Content Styles----------------------------- */
+.post{
+  padding: 70px;
+  padding-top: 10px;
+}
+
 #pageContent{
-  /*background: rgba(235,235,235,.7);*/
-  /*border: 2px solid rgba(10,10,10, .3);*/
-  position: absolute;
-  z-index: 0;
-  margin-top: 8%;
-  margin-left: 10%;
+  height: 100%;
+  padding: 16px;
+  padding-bottom: 80px;
+  margin: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  vertical-align: middle;
-  width: 80%;
-  height: auto;
-  min-width: 800px;
-}
-.post{
-  padding: 4%;
-  padding-top: 2%;
-}
-.bubbleImage{
-  display: block;
-  margin: auto;
-  width:80%;
-  height:auto;
-  border-radius: 50%;
-  border: 5px solid #39B54A;
-  background-color: grey;
-}
-.topicHead{
-  font-family: "Century Gothic";
-  color: #39B54A;
-  text-align: center;
-  padding-top: 4%;
-}
-.topicText{
-  font-family: "Century Gothic";
-  color: grey;
-  text-align: center;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/*search area*/
-.textSearch{
-  /*background: rgba(235,235,235,.7);*/
-  /*border: 2px solid rgba(10,10,10, .3);*/
-  font-family: "Century Gothic";
+#bubbleImage{
+  display: block;
+  margin: auto;
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+  border: 5px solid #d9d9d9;
+}
+
+.infoHead{
+  font-family: sans-serif;
   color: #39B54A;
   text-align: center;
-  padding-top: 36.5%;
+  padding-top: 80px;
   padding-bottom: 10px;
+  margin:0;
   font-size: 35px;
 }
 
-#address{
-  font-family: "Century Gothic";
+.topicHead{
+  font-family: sans-serif;
+  color: #39B54A;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.topicText{
+  font-family: sans-serif;
   color: grey;
-  width: 40%;
-  opacity: 0.85;
+  text-align: center;
+  width: 250px;
+}
+
+
+/*------------------------Search tab style--------------------------  */
+#search{
+  opacity: 0.8;
+  background-color: #d9d9d9;
+  margin-top: 50px;
+  width:auto;
+  box-shadow: 0px 10px 13px  #cccccc;
+  height: auto;
+}
+
+.tablinks{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #39B54A;
+  font-weight: bolder;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #d9d9d9;
+    /* box-shadow: 0px -10px 15px silver; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #bfbfbf;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.015s;
+    width: 50%;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:  #d9d9d9;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 200px;
+    background-color:  #d9d9d9;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+/* .tabcontent {
+    animation: fadeEffect 0.1s; /* Fading effect takes 1 second */
+
+} */
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#searchHead{
+  font-family: sans-serif;
+  color: #39B54A;
+  padding-left: 50px;
+  padding-top: 200px;
+}
+
+#placeSearch{
+  display: block;
+  font-size: 17px;
+  font-family: sans-serif;
+  width:85%;
   height: 40px;
-  font-size: 30px;
-  margin-top: 1%;
-  margin-left: 30%;
-  margin-right: auto;
-  border: 2px solid #39B54A;
+  margin: auto;
+  margin-top: 75px;
+  float: left;
+  color: grey;
+}
+
+#list{
+  position: relative;
+  font-family: sans-serif;
+}
+
+#searchHead{
+  font-family: sans-serif;
+  color: #39B54A;
+}
+
+#categorySelect{
+  color: gray;
+  display: block;
+  margin: auto;
+  margin-top: 75px;
+  height: 40px;
+  width:70%;
+  font-size: 17px;
+  font-family: sans-serif;
+  float: left;
+}
+
+.tabcontent button{
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-top: 75px;
+}
+
+.tabcontent::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#quantity{
+  width: 15%;
+  float: left;
+  margin-top: 75px;
+  height: 40px;
+  font-size: 17px;
+  color: grey;
 }
