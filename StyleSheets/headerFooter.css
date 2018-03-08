@@ -70,9 +70,11 @@ body{
   font-weight: bolder;
 }
 #navBarLeft a:hover{
+  color: #319b3f;
   text-decoration: none;
 }
 #navBarRight a:hover{
+  color: #319b3f;
   text-decoration: none;
 }
 #logo{
