@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Journey - Map Page</title>
-    <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="StyleSheets/mapStyle.css">
   <script type = "text/javascript" src = "Api/placesApi.js"></script>
+  <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<div>
+<!-- <div>
   <a href = "http://support-place-8080.codio.io/homePage.html">
     <img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
   </a>
@@ -32,17 +34,75 @@
       </ul>
     </nav>
   <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-</div>
+</div> -->
+
+<!-- navigation/header start  -->
+<header id = "header">
+  <div id = "headerBanner">
+    <img id = "logo" src = "Images/logoJourney.png"></img>
+  </div>
+
+  <nav id = "navigation">
+    <ul id = "navigationBar">
+      <li><a href = "Homepage.html">Home</a></li>
+      <li><a href = "#">About</a></i>
+      <li><a href = "#">Profile</a></li>
+      <div id = "polygon"></div>
+    </ul>
+  </nav>
+</header>
+
+<!-- navigation/header end -->
 
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
 
 
+
 <div id="searchArea">
-    <p id="searchAreaTitle">Find attractions near you...</p>
-    <input id="address" type = "text" placeholder = "Enter the name of a place..." onkeydown = "checkSubmit()"><br>
+  <section id = "search">
+
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Search by Location Name</button>
+      <button class="tablinks" onclick="openCity(event, 'tab2')">Search by Category</button>
+    </div>
+
+    <!-- Tab content -->
+    <form id ="tab1" class="tabcontent">
+      <input id = "placeSearch" type = "text" placeholder = " Search for a place...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <form id ="tab2" class="tabcontent">
+      <div id = "list">
+            <select id = "categorySelect">
+                <option value="0">Select attraction category...</option>
+                <option value="1">Theme Park</option>
+                <option value="2">Restaurant</option>
+                <option value="3">Museum</option>
+                <option value="4">Bar</option>
+                <option value="5">Famous Places</option>
+            </select>
+        </div>
+        <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+  </section>
+  <!-- search tab end -->
 </div>
 
+
+
 </body>
+
+
+
 
 </html>
