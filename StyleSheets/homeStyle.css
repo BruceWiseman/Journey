@@ -1,6 +1,8 @@
 
 /*Home page specific*/
-
+*{
+  margin: 0;
+}
 /* -----------------------Content Styles----------------------------- */
 .post{
   padding: 70px;
@@ -8,9 +10,7 @@
 }
 
 #pageContent{
-  /*height: 100%;
-  margin-top: 10%;*/
-
+  height: 100%;
   padding: 16px;
   padding-bottom: 80px;
   margin: 0;
@@ -51,7 +51,7 @@
   font-family: sans-serif;
   color: #39B54A;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .topicText{
@@ -59,6 +59,7 @@
   color: grey;
   text-align: center;
   width: 250px;
+  padding-top: 10px;
 }
 
 
@@ -71,7 +72,7 @@
   box-shadow: 0px 10px 13px  #cccccc;
   height: auto;
   /*Border to help with the bland colours*/
-   border: 2px solid rgba(57,181,74, .8);
+  border: 2px solid rgba(57,181,74, .8);
 }
 
 .tablinks{
@@ -132,7 +133,7 @@
   font-family: sans-serif;
   color: #39B54A;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 10%;
   text-align:center;
 }
 
@@ -153,6 +154,7 @@
   font-family: sans-serif;
 }
 
+
 #categorySelect{
   color: gray;
   display: block;
@@ -169,9 +171,9 @@
   width: 15%;
   padding: 10px;
   /*Matches the green of the borders*/
-  /*background: #39B54A;
+  background: #39B54A;
   /*Matches the blue of the google maps ocean*/
-  background: #4a80f5;
+  /*background: #4a80f5;*/
   color: white;
   font-size: 17px;
   border: none; /* Prevent double borders */
@@ -196,8 +198,4 @@
   height: 40px;
   font-size: 17px;
   color: grey;
-}
-
-#footer{
-  position: relative;
 }
