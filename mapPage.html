@@ -13,7 +13,7 @@
 
 <body>
 
-<!-- <div>
+<div>
   <a href = "http://support-place-8080.codio.io/homePage.html">
     <img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
   </a>
@@ -34,10 +34,10 @@
       </ul>
     </nav>
   <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-</div> -->
+</div>
 
 <!-- navigation/header start  -->
-<header id = "header">
+<!--<header id = "header">
   <div id = "headerBanner">
     <img id = "logo" src = "Images/logoJourney.png"></img>
   </div>
@@ -50,7 +50,7 @@
       <div id = "polygon"></div>
     </ul>
   </nav>
-</header>
+</header>-->
 
 <!-- navigation/header end -->
 
@@ -64,8 +64,9 @@
 
     <!-- Tab links -->
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Search by Location Name</button>
-      <button class="tablinks" onclick="openCity(event, 'tab2')">Search by Category</button>
+      <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Search directly</button>
+      <button class="tablinks" onclick="openCity(event, 'tab2')">Search by type</button>
+      <button class="tablinks" onclick="openCity(event, 'tab3')">Favourites</button>
     </div>
 
     <!-- Tab content -->
@@ -75,18 +76,22 @@
     </form>
 
     <form id ="tab2" class="tabcontent">
-      <div id = "list">
-            <select id = "categorySelect">
-                <option value="0">Select attraction category...</option>
-                <option value="1">Theme Park</option>
-                <option value="2">Restaurant</option>
-                <option value="3">Museum</option>
-                <option value="4">Bar</option>
-                <option value="5">Famous Places</option>
-            </select>
-        </div>
-        <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
-        <button type="submit"><i class="fa fa-search"></i></button>
+            <div id = "list">
+                  <select id = "categorySelect">
+                      <option value="0">Select attraction category...</option>
+                      <option value="1">Theme Park</option>
+                      <option value="2">Restaurant</option>
+                      <option value="3">Museum</option>
+                      <option value="4">Bar</option>
+                      <option value="5">Famous Places</option>
+                  </select>
+                  <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+    </form>
+
+    <form id ="tab3" class="tabcontent">
+      <p class = "tabText">No Favourites to show!</p>
     </form>
 
     <script>
