@@ -114,8 +114,9 @@ input[type=text], input[type=password] {
 #loginButton {
     background-color: #4CAF50;
     color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -123,14 +124,25 @@ input[type=text], input[type=password] {
 
 /* Add a hover effect for buttons */
 #loginButton:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
+#cancelButton {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 5px;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+    width: 20%;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: red;
+}
+
+#cancelButton:hover {
+    opacity: 0.9;
 }
 
 /* Center the avatar image inside this container */
@@ -141,8 +153,8 @@ input[type=text], input[type=password] {
 
 /* Avatar image */
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    height: 200px;
+    width: auto;
 }
 
 /* Add padding to containers */
@@ -152,6 +164,7 @@ img.avatar {
 
 /* The "Forgot password" text */
 span.psw {
+    font-family: sans-serif;
     float: right;
     padding-top: 16px;
 }
@@ -163,7 +176,7 @@ span.psw {
         float: none;
     }
     .cancelbtn {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -179,7 +192,7 @@ span.psw {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 /* Modal Content/Box */
@@ -187,7 +200,7 @@ span.psw {
     background-color: #fefefe;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -222,4 +235,9 @@ span.psw {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+
+label{
+  font-family: sans-serif;
+  color: grey;
 }
