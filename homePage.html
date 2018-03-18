@@ -2,7 +2,7 @@
   <!--Colour code: 39B54A -->
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Journey - Home Page</title>
   <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="StyleSheets/homeStyle.css">
@@ -32,30 +32,10 @@
       <nav id="navBarRight">
         <ul>
           <li class="rightNav"><a href="#">Register</a></li>
-          <li class="rightNav"><a href="#">Log In</a></li>
+          <li class="rightNav"><a href = "#" onclick="document.getElementById('id01').style.display='block'">Log In</a></li>
         </ul>
       </nav>
   </div>
-</section>
-
-<!-- navigation/header start  -->
-<!-- <header id = "header">
-  <div id = "headerBanner">
-    <img id = "logo" src = "Images/logoJourney.png"></img>
-  </div>
-
-  <nav id = "navigation">
-    <ul id = "navigationBar">
-      <li><a href = "#">Home</a></li>
-      <li><a href = "#">About</a></i>
-      <li><a href = "#">Profile</a></li>
-      <div id = "polygon"></div>
-    </ul>
-  </nav>
-</header>
-
-<!-- navigation/header end -->
-
 
 <!-- ===========================search tab start=========================== -->
     <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
@@ -126,10 +106,41 @@
 <!--content end  -->
 
 <!-- footer start  -->
-<footer id = "footer">
-  <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-</footer>
+  <footer id = "footer">
+    <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
+  </footer>
 <!-- footer end -->
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+<span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+<!-- Modal Content -->
+<form class="modal-content animate" action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="mContainer">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button id = "loginButton" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="mContainer" style="background-color:#f1f1f1">
+    <button id = "loginButton" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
 
 </body>
 
