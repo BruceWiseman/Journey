@@ -11,13 +11,17 @@ function initMap() {
     center: aberdeen,
     disableDefaultUI: true
     });
-/*
-//add market on map
-  var marker = new google.maps.Marker({
-  position: aberdeen,
-  map: map
-});
-*/
+}
+
+//a function to allow the user to press enter
+//when the textbox in the search div is selected to submit their serach
+function checkSubmit(){
+  document.getElementById('address').onkeydown = function(event){
+    var e = event || window.event;
+    if(e.keyCode == 13){
+      codeAddress();
+    }
+  }
 }
 
 // function which takes the value of the textbox as a search value
@@ -41,15 +45,4 @@ function codeAddress() {
       alert('Geocode was not successful for the following reason: ' + status);
     }
   });
-}
-
-//a function to allow the user to press enter
-//when the textbox in the search div is selected to submit their serach
-function checkSubmit(){
-  document.getElementById('address').onkeydown = function(event){
-    var e = event || window.event;
-    if(e.keyCode == 13){
-      codeAddress();
-    }
-  }
 }
