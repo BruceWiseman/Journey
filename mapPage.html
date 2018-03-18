@@ -30,29 +30,11 @@
     <nav id="navBarRight">
       <ul>
         <li class="rightNav"><a href="#">Register</a></li>
-        <li class="rightNav"><a href="#">Log In</a></li>
+        <li class="rightNav"><a href="#" onclick="document.getElementById('id01').style.display='block'">Log In</a></li>
       </ul>
     </nav>
   <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
 </div>
-
-<!-- navigation/header start  -->
-<!--<header id = "header">
-  <div id = "headerBanner">
-    <img id = "logo" src = "Images/logoJourney.png"></img>
-  </div>
-
-  <nav id = "navigation">
-    <ul id = "navigationBar">
-      <li><a href = "Homepage.html">Home</a></li>
-      <li><a href = "#">About</a></i>
-      <li><a href = "#">Profile</a></li>
-      <div id = "polygon"></div>
-    </ul>
-  </nav>
-</header>-->
-
-<!-- navigation/header end -->
 
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
@@ -108,6 +90,50 @@
 
 </footer>
 <!-- footer end -->
+
+<!-- The Modal -->
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="Images/logoJourney.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="mContainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button id = "loginButton" type="submit">Login</button>
+      <label id = "check">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="mContainer" style="background-color:#f1f1f1">
+      <button id = "cancelButton" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  </div>
+
+  <!-- close modal if the user clicks outside the modal window -->
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
 
 </body>
 
