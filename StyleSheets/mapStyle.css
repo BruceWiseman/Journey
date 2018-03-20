@@ -18,10 +18,10 @@
   position: absolute;
   z-index: 8;
   float: left;
-  width: 30%;
+  width: 37%;
   height: auto;
-  margin-top: 5%;
-  margin-left: 2%;
+  margin-top: 6%;
+  /* margin-left: 2%; */
   min-width: 250px;
 }
 
