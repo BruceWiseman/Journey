@@ -29,8 +29,8 @@
   width:auto;
   /*box-shadow: 0px 10px 13px  #cccccc;*/
   height: auto;
-  /*Border to help with the bland colours*/
-  /* border: 2px solid rgba(57,181,74, .8); */
+  /*Small border to help with the bland colours and cause contrast*/
+  border: 1px solid rgba(57,181,74, .8);
 }
 
 .tabText{
