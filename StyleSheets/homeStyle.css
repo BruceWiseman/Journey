@@ -10,7 +10,6 @@
 }
 
 #pageContent{
-  height: 100%;
   padding: 16px;
   padding-bottom: 80px;
   margin: 0;
@@ -133,7 +132,7 @@
   font-family: sans-serif;
   color: #39B54A;
   padding-left: 50px;
-  padding-top: 10%;
+  padding-top: 200px;
   text-align:center;
 }
 
