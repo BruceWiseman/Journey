@@ -158,8 +158,6 @@ label{
   display: table;
 }
 
-
-
 #registerHead{
   font-family: sans-serif;
   color: #39B54A;
@@ -278,3 +276,11 @@ hr {
   color: darkgreen;
   transform: scale(1.05);
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (max-width: 800px){
+  #logo{
+    display: none;
+  }
+>>>>>>> b320fc9f3c32afc19502a02a40b1ecc1f6b76b70
