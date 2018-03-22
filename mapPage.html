@@ -13,28 +13,20 @@
 
 <body>
 
-<div>
-  <a href = "http://support-place-8080.codio.io/homePage.html">
-    <img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
-  </a>
-</div>
-
-<div id = "Banners">
-<img id = "topBanner" src="Images/Top banner - v2.png" alt="top"></img>
-    <nav id="navBarLeft">
-      <ul>
-        <li class="leftNav"><a href="http://support-place-8080.codio.io/homePage.html">Home</a></li>
-        <li class="leftNav"><a href="http://support-place-8080.codio.io/mapPage.html">Map</a></li>
-      </ul>
-    </nav>
-    <nav id="navBarRight">
-      <ul>
-        <li class="rightNav"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
-        <li class="rightNav"><a href="#" onclick="document.getElementById('id01').style.display='block'">Log In</a></li>
-      </ul>
-    </nav>
-  <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-</div>
+  <header id = "head">
+    <div id = "bannerTop">
+      <nav id = "navigation">
+        <ul id = "navigationBar" class = "topnav">
+          <li><a href = "menuBar.html">Home</a></li>
+          <li><a href = "#">Search</a></i>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Register</a></li>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id = "bannerBottom"></div>
+    <img id = "logo" src = "Images/logoJourney.png"></img>
+  </header>
 
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
