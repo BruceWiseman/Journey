@@ -2,10 +2,11 @@
   <!--Colour code: 39B54A -->
 <html>
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.62">
   <title>Journey - Home Page</title>
-  <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="StyleSheets/homeStyle.css">
+  <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
+
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type = "text/javascript" src = "Api/placesApi.js"></script>
   <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
@@ -14,19 +15,20 @@
 </head>
 
 <body>
+<section>
   <header id = "head">
     <div id = "bannerTop">
       <nav id = "navigation">
         <ul id = "navigationBar" class = "topnav">
           <li><a href = "menuBar.html">Home</a></li>
           <li><a href = "#">Search</a></i>
-          <li style = "float: right;"><a href = "#"  >Register</a></li>
-          <li style = "float: right;"><a href = "#" >Login</a></li>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Register</a></li>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a></li>
         </ul>
       </nav>
     </div>
     <div id = "bannerBottom"></div>
-    <img id = "logo" src = "Images/logoJourney.png" srcset="altLogo.png 800"></img>
+    <img id = "logo" src = "Images/logoJourney.png"></img>
   </header>
 
 <!-- ===========================search tab start=========================== -->
@@ -98,9 +100,6 @@
 <!--content end  -->
 
 <!-- footer start  -->
-  <footer id = "footer">
-    <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-  </footer>
 <!-- footer end -->
 
 <!-- =========================Modal Login/Register Forms==================== -->
