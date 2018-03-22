@@ -8,7 +8,7 @@
   <title>Journey - Home Page</title>
 
   <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
-  <link rel="stylesheet" type="text/css" href="StyleSheets/final.css">
+  <link rel="stylesheet" type="text/css" href="ProfilePage/final.css">
 
 
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -19,13 +19,14 @@
 </head>
 
 <body>
-<section>
+
   <header id = "head">
     <div id = "bannerTop">
       <nav id = "navigation">
         <ul id = "navigationBar" class = "topnav">
           <li><a href = "homePage.html">Home</a></li>
           <li><a href = "mapPage.html">Search</a></i>
+          <li style = "float: right;"><a href="profilePage.html">Profile</a></li>
           <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
           <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
         </ul>
@@ -42,12 +43,13 @@
 
 
 <!-- ===========================profile content=========================== -->
+<section>
 <div class="container">
   <div class="row-account">
 
   <div class="left column">
     <div class="photo-left">
-      <img class="photo" src="profile.png"/>
+      <img class="photo" src="Images/profile.png"/>
       <!-- <img src="profile.png" alt="placeholder" style="width:50%"> -->
     </div>
 
@@ -87,7 +89,7 @@
     </div>
   </div>
 </div>
-</div>
+
 
 
 
@@ -95,8 +97,8 @@
     <div class="row-details">
       <div class="right column">
         <h1 class="favourites">Favourites</h1>
-
         <div class="column-layout">
+
 
       <div class="sidebar-one">
         <h3>Name:</h3>
@@ -125,20 +127,9 @@
     </div>
   </div>
 </div>
-
-<!--content end  -->
-
-<!-- footer start  -->
-<!-- <footer id = "footer">
-</footer> -->
-<!-- footer end -->
-
-
-
-
-
-
-
+</div>
+</section>
+<footer id = "footer"></footer>
 
 
 
