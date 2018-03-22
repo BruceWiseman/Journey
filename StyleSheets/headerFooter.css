@@ -223,7 +223,6 @@ hr {
 
 #logo{
   position: absolute;
-  z-index: 8;
   margin-left: auto;
   margin-right: auto;
   top: 0;
@@ -231,6 +230,24 @@ hr {
   right: 0;
   height: 138px;
   padding: 1px;
+  z-index: 10;
+}
+
+#logo{
+  background-image: url("../Images/logoJourney.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 138px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 800px){
+  #logo{
+    background-image: url("../Images/altLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 138px;
+  }
 }
 
 #navigationBar{
@@ -261,19 +278,3 @@ hr {
   color: darkgreen;
   transform: scale(1.05);
 }
-
-  #logo{
-    background-image: url("logoJourney.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 138px;
-  }
-
-  @media screen and (max-width: 800px){
-    #logo{
-      background-image: url("altLogo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto 138px;
-    }
-  }
