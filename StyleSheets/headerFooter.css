@@ -158,8 +158,6 @@ label{
   display: table;
 }
 
-
-
 #registerHead{
   font-family: sans-serif;
   color: #39B54A;
@@ -262,18 +260,7 @@ hr {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 800px){
   #logo{
-    background-image: url("logoJourney.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 138px;
-  }
-
-  @media screen and (max-width: 800px){
-    #logo{
-      background-image: url("altLogo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto 138px;
-    }
+    display: none;
   }
