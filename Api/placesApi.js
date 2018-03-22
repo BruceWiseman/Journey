@@ -4,8 +4,10 @@ var map;
 // function to initialize the map, when loaded it is centered on aberdeeen
 
 function initMap() {
+  //https://developers.google.com/maps/documentation/geocoding/intro
   geocoder = new google.maps.Geocoder();
   var scotland = {lat: 57.490605, lng: -4.199545};
+  // creates new map object
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 7.5,
     center: scotland,
@@ -46,7 +48,8 @@ function codeAddress() {
 //a function to allow the user to press enter
 //when the textbox in the search div is selected to submit their serach
 function checkSubmit(){
-  document.getElementById('address').onkeydown = function(event){
+  console.log("Hello");
+  document.getElementById('searchB').onkeyup = function(event){
     var e = event || window.event;
     if(e.keyCode == 13){
       codeAddress();
