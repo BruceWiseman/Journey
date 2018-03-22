@@ -70,36 +70,11 @@ body{
   color: darkgreen;
   transform: scale(1.05);
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 800px){
   #logo{
     display: none;
   }
-=======
-#logo{
-  position: absolute;
-  height: auto;
-  display: block;
-  margin-left: 43.5%;
-  width: 13%;
-  z-index: 6;
-  min-width: 130px;
-}
-
-/*Bottom banner*/
-#bottomBanner{
-  position: fixed;
-  z-index: 5;
-  pointer-events: none;
-  opacity: 0.75;
-  width: 100%;
-  height: 70px;
-  margin: 0;
-  bottom: 0;
-  min-width: 1000px;
->>>>>>> be7579249d0d6814841bff05df0688fa7a3724e8
-}
 
 /* =====================Style Modal Login Form============================== */
 
