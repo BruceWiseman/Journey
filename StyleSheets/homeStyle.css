@@ -66,6 +66,10 @@
   padding-top: 10px;
 }
 
+#footer{
+  position:relative;
+}
+
 
 /*------------------------Search tab style--------------------------  */
 #search{
@@ -136,8 +140,9 @@
 #searchHead{
   font-family: sans-serif;
   color: #39B54A;
-  padding-left: 50px;
-  padding-top: 50px;
+  display: block;
+  margin: auto;
+  padding-top: 180px;
   text-align:center;
 }
 

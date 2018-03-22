@@ -176,9 +176,24 @@ hr {
 }
 
 #head{
+  opacity: 0.85;
+  position: absolute;
+  z-index: 8;
   height: auto;
-  width: auto;
+  width: 100%;
   filter: drop-shadow(0px 6px 6px #a6a6a6);
+}
+
+#footer{
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  height: 30px;
+  background-color: white;
+  opacity: 0.85;
+  filter: drop-shadow(0px -6px 6px #a6a6a6);
+  border-top: 3.7px solid #39B54A;
 }
 
 #bannerTop{
@@ -186,9 +201,8 @@ hr {
   height: 60px;
   background-color: white;
   position: relative;
-  z-index:0;
+  z-index:6;
 }
-
 
 #bannerBottom{
   border-top: 80px solid white;
@@ -200,11 +214,12 @@ hr {
   margin: auto;
   position: relative;
   top: -1px;
-  z-index:0;
+  z-index:7;
   filter: drop-shadow(0px 4px 0px #39B54A);
 }
 
 #logo{
+  pointer-events: none;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -213,6 +228,24 @@ hr {
   right: 0;
   height: 138px;
   padding: 1px;
+  z-index: 10;
+}
+
+#logo{
+  background-image: url("../Images/logoJourney.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 138px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 800px){
+  #logo{
+    background-image: url("../Images/altLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 138px;
+  }
 }
 
 #navigationBar{
@@ -223,10 +256,12 @@ hr {
   width: 100%;
   font-family: sans-serif;
   border-bottom: 4.7px solid #39B54A;
+  z-index: 21;
 }
 
 #navigationBar li {
   float: left;
+  z-index: 21;
 }
 
 #navigationBar a {
@@ -237,14 +272,10 @@ hr {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
+  z-index: 21;
 }
 
 #navigationBar a:hover{
   color: darkgreen;
   transform: scale(1.05);
 }
-
-@media screen and (max-width: 800px){
-  #logo{
-    display: none;
-  }
