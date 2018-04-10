@@ -2,10 +2,12 @@
   <!--Colour code: 39B54A -->
 <html>
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.62">
   <title>Journey - Home Page</title>
+
   <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="StyleSheets/homeStyle.css">
+
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type = "text/javascript" src = "Api/placesApi.js"></script>
   <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
@@ -15,27 +17,23 @@
 
 <body>
 <section>
-  <div>
-    <a href = "http://support-place-8080.codio.io/homePage.html">
-      <img id = "logo" src = "Images\logoJourney.png" alt="Journey"></img>
-    </a>
-  </div>
+  <header id = "head">
+    <div id = "bannerTop">
+      <nav id = "navigation">
+        <ul id = "navigationBar" class = "topnav">
+          <li><a href = "homePage.html">Home</a></li>
+          <li><a href = "mapPage.html">Search</a></i>
+          <li style = "float: right;"><a href="profilePage.html">Profile</a></li>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+          <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+        </ul>
+      </nav>
 
-  <div id = "Banners">
-  <img id = "topBanner" src="Images/Top banner - v2.png" alt="top"></img>
-      <nav id="navBarLeft">
-        <ul>
-          <li class="leftNav"><a href="http://support-place-8080.codio.io/homePage.html">Home</a></li>
-          <li class="leftNav"><a href="http://support-place-8080.codio.io/mapPage.html">Map</a></li>
-        </ul>
-      </nav>
-      <nav id="navBarRight">
-        <ul>
-          <li class="rightNav"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
-          <li class="rightNav"><a href = "#" onclick="document.getElementById('id01').style.display='block'">Log In</a></li>
-        </ul>
-      </nav>
-  </div>
+    </div>
+    <div id = "bannerBottom"></div>
+    <div id = "logo" ></div>
+    <!--img id = "logo" src = "Images/logoJourney.png"></img>-->
+  </header>
 
 <!-- ===========================search tab start=========================== -->
     <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
@@ -106,9 +104,8 @@
 <!--content end  -->
 
 <!-- footer start  -->
-  <footer id = "footer">
-    <img id = "bottomBanner" src="Images\Bottom banner - v2.png" alt="bottom"></img>
-  </footer>
+<footer id = "footer">
+</footer>
 <!-- footer end -->
 
 <!-- =========================Modal Login/Register Forms==================== -->
@@ -168,7 +165,7 @@
           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
 
-        <p id = "registerInfo">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>  
+        <p id = "registerInfo">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
       </div>
       <div class="mContainer" style="background-color:#f1f1f1">
         <button type="submit" id="loginButton">Sign Up</button>
@@ -182,11 +179,14 @@
   <script>
   // Get the modal
   var modal = document.getElementById('id01');
-
+  var modal2 = document.getElementById('id02');
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";
+      }
+      if (event.target == modal2) {
+          modal2.style.display = "none";
       }
   }
   </script>

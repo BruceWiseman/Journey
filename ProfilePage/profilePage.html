@@ -1,13 +1,20 @@
 <!DOCTYPE html>
   <!--Colour code: 39B54A -->
 <html>
+
+<!-- ===========================Header=========================== -->
 <head>
-  <meta charset="utf-8">
-  <title>Journey - Map Page</title>
-  <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
-  <link rel="stylesheet" type="text/css" href="StyleSheets/mapStyle.css">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.62">
+  <title>Journey - Home Page</title>
+
+  <link rel="stylesheet" type="text/css" href="headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="final.css">
+
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type = "text/javascript" src = "Api/placesApi.js"></script>
   <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
+  <!--<script type = "text/javascript" src = "Scripts/scrollScript.js"></script>-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -19,75 +26,120 @@
         <ul id = "navigationBar" class = "topnav">
           <li><a href = "homePage.html">Home</a></li>
           <li><a href = "mapPage.html">Search</a></i>
-          <li style = "float: right;"><a href="profilePage.html">Profile</a></li>
+          <li style = "float: right;"><a href="ProfilePage/profilePage.html">Profile</a></li>
           <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
           <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
         </ul>
       </nav>
+
     </div>
     <div id = "bannerBottom"></div>
     <div id = "logo" ></div>
     <!--img id = "logo" src = "Images/logoJourney.png"></img>-->
   </header>
 
-<div id="map"></div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
 
 
 
-<div id="searchArea">
-  <section id = "search">
 
-    <!-- Tab links -->
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Name</button>
-      <button class="tablinks" onclick="openCity(event, 'tab2')">Category</button>
-      <button class="tablinks" onclick="openCity(event, 'tab3')">Favourites</button>
+<!-- ===========================profile content=========================== -->
+<section>
+<div class="container">
+  <div class="row-account">
+
+  <div class="left column">
+    <div class="photo-left">
+      <img class="photo" src="profile.png"/>
+      <!-- <img src="profile.png" alt="placeholder" style="width:50%"> -->
     </div>
 
-    <!-- Tab content -->
-    <form id ="tab1" class="tabcontent">
-      <input id = "placeSearch" type = "text" placeholder = " Search for a place...">
-      <button id="searchB" type="submit" onkeydown="checkSubmit()"><i class="fa fa-search"></i></button>
-    </form>
+    <h4 class="username">Bartek MacGregor Genari-Mactaggart</h4>
 
-    <form id ="tab2" class="tabcontent">
-            <div id = "list">
-                  <select id = "categorySelect">
-                      <option value="0">Select attraction category...</option>
-                      <option value="1">Theme Park</option>
-                      <option value="2">Restaurant</option>
-                      <option value="3">Museum</option>
-                      <option value="4">Bar</option>
-                      <option value="5">Famous Places</option>
-                  </select>
-                  <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-              </div>
-    </form>
+    <p>Experience Bar</p>
+    <div class="exp">
+      <div class="skills bar">(50%)</div>
+    </div>
 
-    <form id ="tab3" class="tabcontent">
-      <p class = "tabText">No Favourites to show!</p>
-    </form>
 
-    <script>
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
+    <div class="stats row">
+      <div class="stat column">
+        <p class="number-stat">62</p>
+        <p class="desc-stat">Amount of Searches:</p>
+      </div>
 
-  </section>
-  <!-- search tab end -->
+      <div class="stat column">
+        <p class="number-stat">15</p>
+        <p class="desc-stat">Amount of Favourites:</p>
+      </div>
+    </div>
+
+    <div class="accountDetails">
+      <div class="name">
+        <p>Name: Bartek Genari-Mactaggart</p>
+      </div>
+      <div class="dob">
+        <p>Date of Birth: 01/01/01 </p>
+      </div>
+      <div class="creationDate">
+        <p>Account Creation Date: 10/10/10</p>
+      </div>
+      <div class="email">
+        <p>Email: emailExample@hotmail.co.uk </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- footer start  -->
-<footer id = "footer">
-</footer>
-<!-- footer end -->
 
+
+
+<!-- RIGHT COLUMN  -->
+    <div class="row-details">
+      <div class="right column">
+        <h1 class="favourites">Favourites</h1>
+        <div class="column-layout">
+
+
+      <div class="sidebar-one">
+        <h3>Name:</h3>
+        <p>Cadonnas</p>
+        <p>Triple Kirks</p>
+        <p>Disney Land</p>
+        <p>Tunnels</p>
+      </div>
+
+      <div class="sidebar-two">
+        <h3>City:</h3>
+        <p>Aberdeen</p>
+        <p>Aberdeen</p>
+        <p>Paris</p>
+        <p>Aberdeen</p>
+      </div>
+
+      <div class="sidebar-three">
+        <h3>Distance:</h3>
+        <p>2km</p>
+        <p>10km</p>
+        <p>1.5km</p>
+        <p>0km</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<footer id = "footer"></footer>
+
+
+
+
+
+
+<!-- =========================Modal Login/Register Forms==================== -->
 <!-- The Login Modal -->
   <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-  class="close" title="Close Modal">&times;</span>
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
@@ -151,11 +203,11 @@
   </div>
 
   <!-- close modal if the user clicks outside the modal window -->
+  <!-- script for modal id01 (login) -->
   <script>
   // Get the modal
   var modal = document.getElementById('id01');
   var modal2 = document.getElementById('id02');
-
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
       if (event.target == modal) {

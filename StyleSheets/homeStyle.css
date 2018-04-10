@@ -5,12 +5,16 @@
 }
 /* -----------------------Content Styles----------------------------- */
 .post{
-  padding: 70px;
+  padding: 80px;
   padding-top: 25px;
+  transition: all .2s ease-in-out;
+}
+
+.post:hover{
+  transform: scale(1.1);
 }
 
 #pageContent{
-  height: 100%;
   padding: 16px;
   padding-bottom: 80px;
   margin: 0;
@@ -42,7 +46,7 @@
   color: #39B54A;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   margin:0;
   font-size: 35px;
 }
@@ -60,6 +64,10 @@
   text-align: center;
   width: 250px;
   padding-top: 10px;
+}
+
+#footer{
+  position:relative;
 }
 
 
@@ -132,8 +140,9 @@
 #searchHead{
   font-family: sans-serif;
   color: #39B54A;
-  padding-left: 50px;
-  padding-top: 10%;
+  display: block;
+  margin: auto;
+  padding-top: 180px;
   text-align:center;
 }
 
@@ -198,4 +207,8 @@
   height: 40px;
   font-size: 17px;
   color: grey;
+}
+
+#bottomBanner{
+  position: relative;
 }
