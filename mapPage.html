@@ -6,6 +6,7 @@
   <title>Journey - Map Page</title>
   <link rel="stylesheet" type="text/css" href="StyleSheets/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="StyleSheets/mapStyle.css">
+  <script src='http://code.jquery.com/jquery-1.12.0.min.js'></script>
   <script type = "text/javascript" src = "Api/placesApi.js"></script>
   <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +32,7 @@
   </header>
 
 <div id="map"></div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap&libraries=places"></script>
 
 
 
@@ -51,18 +52,24 @@
       <button id="searchB" type="submit" onkeydown="checkSubmit()"><i class="fa fa-search"></i></button>
     </form>
 
-    <form id ="tab2" class="tabcontent">
+    <form id ="tab2" class="tabcontent" onsubmit="return false">
             <div id = "list">
                   <select id = "categorySelect">
                       <option value="0">Select attraction category...</option>
-                      <option value="1">Theme Park</option>
-                      <option value="2">Restaurant</option>
-                      <option value="3">Museum</option>
+                      <option value="amusement_park">Amusement Park</option>
+                      <option value="aquarium">Aquarium</option>
+                      <option value="art_gallery">Art Gallery</option>
+                      <option value="bar">Bar</option>
                       <option value="4">Bar</option>
-                      <option value="5">Famous Places</option>
+                      <option value="bowling_alley">Bowling Alley</option>
+                      <option value="museum">Museum</option>
+                      <option value="restaurant">Restaurant</option>
+                      <option value="spa">Spa</option>
+                      <option value="stadium">Stadium</option>
+                      <option value="zoo"></option>
                   </select>
-                  <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100" value="0">
+                  <button id="categorySearch"><i class="fa fa-search"></i></button>
               </div>
     </form>
 
