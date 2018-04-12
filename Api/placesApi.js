@@ -1,11 +1,15 @@
 var geocoder;
 var map;
+var service;
 
 // function to initialize the map, when loaded it is centered on aberdeeen
 
 function initMap() {
   //https://developers.google.com/maps/documentation/geocoding/intro
   geocoder = new google.maps.Geocoder();
+
+  //Creates a placesservice for a "nearby search request" https://developers.google.com/maps/documentation/javascript/places#place_search_requests
+  service = new google.maps.places.PlacesService(document.getElementById('map'));
   var scotland = {lat: 57.490605, lng: -4.199545};
   // creates new map object
   map = new google.maps.Map(document.getElementById('map'), {
@@ -15,16 +19,6 @@ function initMap() {
     });
 }
 
-//a function to allow the user to press enter
-//when the textbox in the search div is selected to submit their serach
-function checkSubmit(){
-  document.getElementById('address').onkeydown = function(event){
-    var e = event || window.event;
-    if(e.keyCode == 13){
-      codeAddress();
-    }
-  }
-}
 
 // function which takes the value of the textbox as a search value
 //and atempts to find and display the location on the map
@@ -48,8 +42,6 @@ function codeAddress() {
     }
   });
 }
-<<<<<<< HEAD
-=======
 
 //a function to allow the user to press enter
 //when the textbox in the search div is selected to submit their serach
@@ -61,5 +53,10 @@ function checkSubmit(){
       codeAddress();
     }
   }
+
+
+
+  function searchCategory(){
+
+  }
 }
->>>>>>> 2a03ea0be9777c11885739059af28411645153d1
