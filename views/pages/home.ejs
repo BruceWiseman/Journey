@@ -18,22 +18,6 @@
 <body>
 <section>
   <header id = "head">
-    <!-- <div id = "bannerTop">
-      <nav id = "navigation">
-        <ul id = "navigationBar" class = "topnav">
-          <li><a href = "homePage.html">Home</a></li>
-          <li><a href = "mapPage.html">Search</a></i>
-          <li style = "float: right;"><a href="profilePage.html">Profile</a></li>
-          <li style = "float: right;"><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
-          <li style = "float: right;"><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
-        </ul>
-      </nav>
-
-    </div>
-    <div id = "bannerBottom"></div>
-    <div id = "logo" ></div> -->
-    <!--img id = "logo" src = "Images/logoJourney.png"></img>-->
-
     <% include ../partials/header %>
   </header>
 
@@ -113,10 +97,10 @@
 <!-- =========================Modal Login/Register Forms==================== -->
 <!-- The Login Modal -->
   <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
+  <!-- <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <img src="Images/logoJourney.png" alt="Avatar" class="avatar">
     </div>
@@ -138,7 +122,10 @@
       <button id = "cancelButton" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-  </form>
+  </form> -->
+
+    <% include ../partials/login %>
+
   </div>
 
   <!-- Register Modal -->
