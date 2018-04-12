@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Journey - Map Page</title>
-  <link rel="stylesheet" type="text/css" href="../../styles/headerFooter.css">
-  <link rel="stylesheet" type="text/css" href="../../styles/mapStyle.css">
+  <link rel="stylesheet" type="text/css" href="/styles/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="/styles/mapStyle.css">
   <script type = "text/javascript" src = "Api/placesApi.js"> </script>
   <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
 <body>
 
   <header id = "head">
-    <div id = "bannerTop">
+    <!-- <div id = "bannerTop">
       <nav id = "navigation">
         <ul id = "navigationBar" class = "topnav">
           <li><a href = "homePage.html">Home</a></li>
@@ -26,8 +26,11 @@
       </nav>
     </div>
     <div id = "bannerBottom"></div>
-    <div id = "logo" ></div>
+    <div id = "logo" ></div> -->
     <!--img id = "logo" src = "Images/logoJourney.png"></img>-->
+
+    <% include ../partials/header %>
+
   </header>
 
 <div id="map"></div>
