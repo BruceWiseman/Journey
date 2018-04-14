@@ -53,7 +53,7 @@ app.get('/profile', function(req, res) {
 
   //get the requested user based on their username,
   var uname = req.query.username;
-  console.log(JSON.stringify(uname))
+  console.log(JSON.stringify(req.query.username))
 
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
