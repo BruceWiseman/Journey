@@ -71,5 +71,4 @@ var datatostore = {
     console.log(datastore);
     //when complete redirect to the index
     //res.redirect('/')
-  })
 });
