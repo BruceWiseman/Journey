@@ -61,6 +61,11 @@ function initMap() {
 //   }
 
 
+function searchName(){
+
+
+}
+
 
 
 
@@ -83,11 +88,12 @@ function initMap() {
     }
 
   function callback(results, status){
+    console.log("Callback");
     //console.log(status);
     if(status == google.maps.places.PlacesServiceStatus.OK){
       for(var i = 0; i < results.length; i++){
         var places = results[i];
-
+        console.log(places);
         for(var i = 0; place=places[i]; i++){
           marker.setPosition(place.geometry.location);
         }
