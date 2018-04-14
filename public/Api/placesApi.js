@@ -62,6 +62,12 @@ function initMap() {
 
 
 
+    // var request = {
+    //   location: scotland,
+    //   radius: radius,
+    //   type: value
+    // };
+
 
 
 
@@ -72,15 +78,9 @@ function searchCategory(){
     var radius = document.getElementById('quantity').value;
     console.log(value + " " + radius);
 
-    // var request = {
-    //   location: scotland,
-    //   radius: radius,
-    //   type: value
-    // };
-
-      console.log("Before callback");
-      service.placeSearch(request, callback);
-      console.log("After callback");
+    console.log("Before callback");
+    service.placeSearch(request, callback);
+    console.log("After callback");
 
 }
 
