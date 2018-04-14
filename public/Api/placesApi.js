@@ -62,6 +62,8 @@ function initMap() {
 
 
 
+
+
   function searchCategory(){
       //Request uses user entered data to find location
       var e = document.getElementById('categorySelect');
@@ -84,8 +86,12 @@ function initMap() {
     //console.log(status);
     if(status == google.maps.places.PlacesServiceStatus.OK){
       for(var i = 0; i < results.length; i++){
-        var place = results[i];
-        createMarker(results[i]);
+        var places = results[i];
+
+        for(var i = 0; place=places[i]; i++){
+          marker.setPosition(place.geometry.location);
+        }
+
       }
     }
   }
