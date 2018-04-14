@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 var db;
+var username;
 
 //connection to the mongo db, ts sets the variable db as the database
 MongoClient.connect(url, function(err, database) {
@@ -105,6 +106,7 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
+      var username = result.login.username;
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
