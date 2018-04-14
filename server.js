@@ -1,12 +1,12 @@
 // server.js
 // load the things we need
 
-var MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
-var url = "mongodb://localhost:27017/userprofiles";
-var express = require('express'); //npm install express
-var session = require('express-session'); //npm install express-session
-var bodyParser = require('body-parser'); //npm install body-parser
-var app = express();
+const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
+const url = "mongodb://localhost:27017/userprofiles";
+const express = require('express'); //npm install express
+const session = require('express-session'); //npm install express-session
+const bodyParser = require('body-parser'); //npm install body-parser
+const app = express();
 
 //use sessions
 app.use(session({ secret: 'example' }));
