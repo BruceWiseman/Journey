@@ -82,8 +82,9 @@ function searchName(){
           type: [value]
         };
 
+        console.log("Before callback");
         service.nearbySearch(request, callback);
-      
+        console.log("After callback");
 
     }
 
