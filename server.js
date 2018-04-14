@@ -55,7 +55,7 @@ app.get('/profile', function(req, res) {
 
 app.post('/adduser', function(req, res) {
   //check we are logged in
-  //if(!req.session.loggedin){res.redirect('/');return;}
+  if(!req.session.loggedin){res.redirect('/');return;}
 
   //we create the data string from the form components that have been passed in
 
@@ -68,8 +68,8 @@ var datatostore = {
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('people').save(datatostore, function(err, result) {
     if (err) throw err;
-    console.log(JSON.stringify(datastore));
+    console.log("added to database");
     //when complete redirect to the index
-    //res.redirect('/')
+    res.redirect('/')
   })
 });
