@@ -55,7 +55,7 @@ app.get('/profile', function(req, res) {
 
 app.post('/adduser', function(req, res) {
   //check we are logged in
-  if(!req.session.loggedin){res.redirect('/');return;}
+  //if(!req.session.loggedin){res.redirect('/');return;}
 
   //we create the data string from the form components that have been passed in
 
@@ -70,6 +70,6 @@ var datatostore = {
     if (err) throw err;
     console.log(datastore);
     //when complete redirect to the index
-    res.redirect('/')
+    //res.redirect('/')
   })
 });
