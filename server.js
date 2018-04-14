@@ -80,8 +80,8 @@ var datatostore = {
 //the post variables, username and password come from the login form
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
-  var uname = req.body.username;
-  var pword = req.body.password;
+  var uname = req.body.uname;
+  var pword = req.body.psw;
 
   db.collection('people').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
