@@ -69,24 +69,24 @@ function searchName(){
 
 
 
-  function searchCategory(){
-      //Request uses user entered data to find location
-      var e = document.getElementById('categorySelect');
-      var value = e.options[e.selectedIndex].value;
-      var radius = document.getElementById('quantity').value;
-      console.log(value + " " + radius);
+function searchCategory(){
+    //Request uses user entered data to find location
+    var e = document.getElementById('categorySelect');
+    var value = e.options[e.selectedIndex].value;
+    var radius = document.getElementById('quantity').value;
+    console.log(value + " " + radius);
 
-      // var request = {
-      //   location: scotland,
-      //   radius: radius,
-      //   type: value
-      // };
+    // var request = {
+    //   location: scotland,
+    //   radius: radius,
+    //   type: value
+    // };
 
-        console.log("Before callback");
-        service.nearbySearch(request, callback);
-        console.log("After callback");
+      console.log("Before callback");
+      service.nearbySearch(request, callback);
+      console.log("After callback");
 
-    }
+}
 
   function callback(results, status){
     console.log("Callback");
@@ -96,7 +96,10 @@ function searchName(){
         var places = results[i];
         console.log(places);
         for(var i = 0; place=places[i]; i++){
-          marker.setPosition(place.geometry.location);
+          var marker = new google.maps.Marker({
+            map:map,
+            position:place.geometry.location
+          });
         }
 
       }
