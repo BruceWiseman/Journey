@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 var db;
+
 var username;
 
 //connection to the mongo db, ts sets the variable db as the database
@@ -35,17 +36,17 @@ MongoClient.connect(url, function(err, database) {
 //==========================GET ROUTES = display pages==========================
 
 // use res.render to load up an ejs view file
-// home page
+// ====home page
 app.get('/', function(req, res) {
  res.render('pages/home');
 });
 
-// search page
+//==== search page
 app.get('/search', function(req, res) {
  res.render('pages/map');
 });
 
-// profile page
+//==== profile page
 app.get('/profile', function(req, res) {
 
   if(!req.session.loggedin){res.redirect('/');return;}
@@ -58,9 +59,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile?username=<%= user.login.username %>', {
-      user:result
-    })
+    res.render('pages/profile?username='+uname,{user : result});
   });
 });
 
@@ -106,7 +105,7 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
-      var username = result.login.username;
+      username = result.login.username;
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
