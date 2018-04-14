@@ -61,10 +61,6 @@ function initMap() {
 //   }
 
 
-function searchName(){
-
-
-}
 
 
 
@@ -83,7 +79,7 @@ function searchCategory(){
     // };
 
       console.log("Before callback");
-      service.nearbySearch(request, callback);
+      service.placeSearch(request, callback);
       console.log("After callback");
 
 }
