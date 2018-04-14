@@ -2,7 +2,7 @@
 // load the things we need
 
 var MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
-var url = "mongodb://localhost:27017/profiles";
+var url = "mongodb://localhost:27017/userprofiles";
 var express = require('express'); //npm install express
 var session = require('express-session'); //npm install express-session
 var bodyParser = require('body-parser'); //npm install body-parser
