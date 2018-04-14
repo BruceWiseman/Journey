@@ -72,16 +72,16 @@ function initMap() {
 
 
 function searchCategory(){
-    //Request uses user entered data to find location
-    var e = document.getElementById('categorySelect');
-    var value = e.options[e.selectedIndex].value;
-    var radius = document.getElementById('quantity').value;
-    console.log(value + " " + radius);
+  console.log("hello");
+  //Request uses user entered data to find location
+  var e = document.getElementById('categorySelect');
+  var value = e.options[e.selectedIndex].value;
+  var radius = document.getElementById('quantity').value;
+  console.log(value + " " + radius);
 
-    console.log("Before callback");
-    service.placeSearch(request, callback);
-    console.log("After callback");
-
+  console.log("Before callback");
+  service.placeSearch(request, callback);
+  console.log("After callback");
 }
 
   function callback(results, status){
