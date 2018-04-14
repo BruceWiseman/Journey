@@ -59,7 +59,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile',{first : result.name.first, last : result.name.last, email : result.login.username});
+    res.render('pages/profile',{user : result});
   });
 });
 
