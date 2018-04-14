@@ -57,7 +57,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile', {
+    res.render('pages/profile?username=<%= user.login.username %>', {
       user:result
     })
   });
