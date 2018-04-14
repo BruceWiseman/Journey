@@ -72,7 +72,7 @@ function initMap() {
 
 
 function searchCategory(){
-  console.log("hello");
+  console.log("hello" + scotland);
   //Request uses user entered data to find location
   var e = document.getElementById('categorySelect');
   var value = e.options[e.selectedIndex].value;
