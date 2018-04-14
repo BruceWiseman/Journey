@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
 
 var db;
 
-var username;
+var username = null;
 
 //connection to the mongo db, ts sets the variable db as the database
 MongoClient.connect(url, function(err, database) {
@@ -53,13 +53,14 @@ app.get('/profile', function(req, res) {
 
   //get the requested user based on their username,
   var uname = req.query.username;
+  console.log(JSON.stringify(uname))
 
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile?username='+uname,{user : result});
+    res.render('pages/profile',{user : result});
   });
 });
 
