@@ -105,7 +105,6 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
-      changeLink();
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
