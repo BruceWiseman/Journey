@@ -57,7 +57,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile?username=<%= user.login.username %>', {
+    res.render('pages/profile', {
       user:result
     })
   });
@@ -103,7 +103,7 @@ app.post('/dologin', function(req, res) {
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/');return}
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
-    if(result.login.password == pword){ req.session.loggedin = true; res.redirect('/profile') }
+    if(result.login.password == pword){ req.session.loggedin = true; res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
   });
