@@ -82,7 +82,7 @@ function searchCategory(){
   var request = {location:scotland, radius: radius, type: value};
 
   console.log("Before callback");
-  service.placeSearch(request, callback);
+  service.nearbySearch(request, callback);
   console.log("After callback");
 }
 
