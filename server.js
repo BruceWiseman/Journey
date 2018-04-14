@@ -57,9 +57,12 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": uname}, function(err, result) {
     if (err) throw err;
 
-  res.render('pages/profile', {user:result});
+    res.render('pages/profile', {
+      user:result
+    })
   });
 });
+
 
 //=========================POST ROUTES = deal with data=========================
 
