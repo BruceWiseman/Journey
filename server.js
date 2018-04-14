@@ -1,7 +1,7 @@
 // server.js
 // load the things we need
 
-const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
+//const MongoClient = require('mongodb').MongoClient; //npm install mongodb@2.2.32
 const url = "mongodb://localhost:27017/profiles";
 const express = require('express'); //npm install express
 const session = require('express-session'); //npm install express-session
