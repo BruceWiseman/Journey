@@ -66,9 +66,10 @@ var datatostore = {
 
 
 //once created we just run the data string against the database and all our new data will be saved/
-  //db.collection('people').save(datatostore, function(err, result) {
-    //if (err) throw err;
+  db.collection('people').save(datatostore, function(err, result) {
+    if (err) throw err;
     console.log(datastore);
     //when complete redirect to the index
-    //res.redirect('/')
+    res.redirect('/')
+  })
 });
