@@ -75,7 +75,7 @@ function searchName(){
       var value = e.options[e.selectedIndex].value;
       var radius = document.getElementById('quantity').value;
       console.log(value + " " + radius);
-      if(value!=0){
+
         var request = {
           location: scotland,
           radius: radius,
@@ -83,7 +83,7 @@ function searchName(){
         };
 
         service.nearbySearch(request, callback);
-      };
+      
 
     }
 
