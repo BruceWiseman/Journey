@@ -65,9 +65,9 @@ app.get('/profile', function(req, res) {
 
 //logout route
 app.get('/logout', function(req, res) {
+  console.log(JSON.stringify(req.session.user.login.username),"logged out, bye!");
   req.session.loggedin = false;
   req.session.destroy();
-  console.log(JSON.stringify(req.session.user.login.username),"logged out, bye!");
   res.redirect('/');
 });
 
