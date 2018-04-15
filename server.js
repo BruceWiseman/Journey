@@ -155,9 +155,5 @@ app.post('/doedit', function(req, res) {
       "email":req.body.email,
       "avatar":req.body.avatar
     });
+    res.redirect("/profile");
   });
-
-
-  res.redirect("/profile");
-
-});
