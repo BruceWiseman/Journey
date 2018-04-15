@@ -154,7 +154,7 @@ app.post('/doedit', function(req, res) {
       "name":{"first":req.body.first,"last":req.body.last},
       "login":{"username":req.body.email,"password":req.body.psw},
       "email":req.body.email,
-      "avatar":req.body.avatar,
+      "avatar":req.body.avatar
     }
   });
 
