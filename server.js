@@ -155,5 +155,6 @@ app.post('/doedit', function(req, res) {
       "email":req.body.email,
       "avatar":req.body.avatar
     }});
+    console.log("Updated user",JSON.stringify(req.session.user.login.username));
     res.redirect("/profile");
   });
