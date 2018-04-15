@@ -142,13 +142,6 @@ app.post('/dologin', function(req, res) {
 //route to deal with user profile edits
 app.post('/doedit', function(req, res) {
 
-  // req.session.user.name.first = req.body.first;
-  // req.session.user.name.last = req.body.last;
-  // req.session.user.login.username = req.body.email;
-  // req.session.user.login.password = req.body.psw;
-  // req.session.user.email = req.body.email;
-  // req.session.user.avatar = req.body.avatar;
-
   db.collection("people").update({"login.username": req.session.user.login.username},{$set:{
       "name":{"first":req.body.first,"last":req.body.last},
       "login":{"username":req.body.email,"password":req.body.psw},
