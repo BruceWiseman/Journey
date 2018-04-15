@@ -179,6 +179,7 @@ font-family: sans-serif  font-weight: 600;
 }
 
 #edit{
+  background-color: white;
   border: none;
   color: #4CAF50;
   padding: 15px 32px;
