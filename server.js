@@ -142,12 +142,15 @@ app.post('/dologin', function(req, res) {
 //route to deal with user profile edits
 app.post('/doedit', function(req, res) {
 
+  //select the current session user and update the info
   db.collection("people").update({"login.username": req.session.user.login.username},{$set:{
       "name":{"first":req.body.first,"last":req.body.last},
       "login":{"username":req.body.email,"password":req.body.psw},
       "email":req.body.email,
       "avatar":req.body.avatar
     }});
+    //confirm that a user was edited
     console.log("Updated user",JSON.stringify(req.session.user.login.username));
+    //render the profile page
     res.redirect("/profile");
   });
