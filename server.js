@@ -56,7 +56,7 @@ app.get('/profile', function(req, res) {
 
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
-  db.collection('people').findOne({"login.username": req.session.user}, function(err, result) {
+  db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
 
     res.render('pages/profile',{user : result});
@@ -121,7 +121,7 @@ app.post('/dologin', function(req, res) {
       console.log(JSON.stringify(req.session.user))
 
       username = result.login.username;
-      
+
       console.log("user logged in, hello!");
       res.redirect('/') }
     //otherwise send them back to login
