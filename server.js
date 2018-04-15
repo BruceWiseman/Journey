@@ -63,6 +63,14 @@ app.get('/profile', function(req, res) {
   });
 });
 
+//logout route
+app.get('/logout', function(req, res) {
+  if(req.session.loggedin){res.redirect('/');return;}
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
 
 //=========================POST ROUTES = deal with data=========================
 
