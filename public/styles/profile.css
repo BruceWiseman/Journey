@@ -179,14 +179,13 @@ font-family: sans-serif  font-weight: 600;
 }
 
 #edit{
-  background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
+  color: #4CAF50;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 13px;
   float: right;
 }
 /*  ////////////////////////////////////////////// */
