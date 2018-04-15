@@ -67,7 +67,7 @@ app.get('/profile', function(req, res) {
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
-  console.log("user logged out, bye!");
+  console.log(JSON.stringify(req.session.user.login.username),"logged out, bye!");
   res.redirect('/');
 });
 
@@ -105,7 +105,7 @@ var datatostore = {
 //the dologin route deals with the data from the login screen.
 //the post variables, username and password come from the login form
 app.post('/dologin', function(req, res) {
-  console.log(JSON.stringify(req.body))
+  //console.log(JSON.stringify(req.body))
   var uname = req.body.uname;
   var pword = req.body.psw;
 
@@ -119,11 +119,9 @@ app.post('/dologin', function(req, res) {
       //set the result as the current session user
       req.session.user = result;
 
-      console.log(JSON.stringify(req.session.user.login.username))
-
       //username = result.login.username;
 
-      console.log(JSON.stringify(req.session.user.login.username), " logged in, hello!");
+      console.log(JSON.stringify(req.session.user.login.username), "logged in, hello!");
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
