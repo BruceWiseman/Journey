@@ -2,6 +2,7 @@ var geocoder;
 var map;
 var service;
 var scotland;
+var aberdeen;
 
 // function to initialize the map, when loaded it is centered on aberdeeen
 
@@ -13,6 +14,7 @@ function initMap() {
   //Creates a placesservice for a "nearby search request" https://developers.google.com/maps/documentation/javascript/places#place_search_requests
 
   //var scotland = {lat: 57.490605, lng: -4.199545};
+  aberdeen = new google.maps.LatLng(57.1497, -2.0943);
   scotland = new google.maps.LatLng(57.490605, -4.199545);
   // creates new map object
   map = new google.maps.Map(document.getElementById('map'), {
@@ -79,7 +81,7 @@ function searchCategory(){
   var radius = document.getElementById('quantity').value;
   console.log(value + " " + radius);
 
-  var request = {location:scotland, radius: radius, type: value};
+  var request = {location:aberdeen, radius: radius, type: value};
 
   console.log("Before callback");
   service.nearbySearch(request, callback);
