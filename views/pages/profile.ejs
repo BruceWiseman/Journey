@@ -42,32 +42,34 @@
       <div class="skills bar">(50%)</div>
     </div>
 
-
     <div class="stats row">
-      <div class="stat column">
+      <!-- <div class="stat column">
         <p class="number-stat">62</p>
         <p class="desc-stat">Amount of Searches:</p>
-      </div>
+      </div> -->
 
       <div class="stat column">
-        <p class="number-stat">15</p>
         <p class="desc-stat">Amount of Favourites:</p>
+        <p class="number-stat">0</p>
       </div>
     </div>
 
     <div class="accountDetails">
-      <div class="name">
+      <!-- <div class="name">
         <p></p>
-      </div>
-      <div class="dob">
+      </div> -->
+      <!-- <div class="dob">
         <p>Date of Birth: 01/01/01 </p>
-      </div>
-      <div class="creationDate">
-        <p>Account Creation Date: 10/10/10</p>
-      </div>
+      </div> -->
+
       <div class="email">
-        <p></p>
+        <p>Email: <%= user.email %></p>
       </div>
+
+      <div class="creationDate">
+        <p>Account Creation Date: <%= user.registered %></p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -75,7 +77,7 @@
 
 
 
-<!-- RIGHT COLUMN  -->
+<!-- FAVOURITES = RIGHT COLUMN  -->
     <div class="row-details">
       <div class="right column">
         <h1 class="favourites">Favourites</h1>
