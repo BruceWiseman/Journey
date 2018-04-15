@@ -149,7 +149,7 @@ app.post('/doedit', function(req, res) {
   // req.session.user.email = req.body.email;
   // req.session.user.avatar = req.body.avatar;
 
-  people.update({req.session.user._id},{
+  collection.update({req.session.user._id},{
     {
       "name":{"first":req.body.first,"last":req.body.last},
       "login":{"username":req.body.email,"password":req.body.psw},
