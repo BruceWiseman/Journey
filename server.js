@@ -87,6 +87,7 @@ var datatostore = {
   "login":{"username":req.body.email,"password":req.body.psw},
   "email":req.body.email,
   "registered":Date(),
+  "avatar":req.body.avatar,
   "favourites":{}
 };
 
