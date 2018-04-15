@@ -83,14 +83,14 @@ function searchCategory(){
 
   console.log("Before callback");
   service.nearbySearch(request, callback);
-  console.log("After callback");
 }
 
   function callback(results, status){
-    console.log("Callback");
-    //console.log(status);
+    console.log(status);
     if(status == google.maps.places.PlacesServiceStatus.OK){
+      console.log("if");
       for(var i = 0; i < results.length; i++){
+        console.log("for");
         var places = results[i];
         console.log(places);
         for(var i = 0; place=places[i]; i++){
