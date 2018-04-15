@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
 
 var db;
 
-var username = null;
+//var username = null;
 
 //connection to the mongo db, ts sets the variable db as the database
 MongoClient.connect(url, function(err, database) {
@@ -52,7 +52,7 @@ app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/');return;}
 
   //get the requested user based on their username,
-  console.log(JSON.stringify(username))
+  //console.log(JSON.stringify(username))
 
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
@@ -116,11 +116,12 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
+      //set the result as the current session user
       req.session.user = result;
 
       console.log(JSON.stringify(req.session.user))
 
-      username = result.login.username;
+      //username = result.login.username;
 
       console.log("user logged in, hello!");
       res.redirect('/') }
