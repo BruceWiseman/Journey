@@ -147,7 +147,7 @@ app.post('/doedit', function(req, res) {
   req.session.user.login.username = req.body.email;
   req.session.user.login.password = req.body.psw;
   req.session.user.email = req.body.email;
-  req.session.avatar = req.body.avatar;
+  req.session.user.avatar = req.body.avatar;
 
   res.redirect("/profile");
 
