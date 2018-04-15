@@ -25,28 +25,24 @@
   </header>
 
   <section>
-    <form class="modal-content animate" action="/adduser" method = "POST">
+    <form class="modal-content animate" action="/doedit" method = "POST">
       <div class="mContainer">
 
-        <div class="imgcontainer">
-          <img src="Images/logoJourney.png" alt="Avatar" class="avatar">
-        </div>
-
-        <h1 id = "registerHead">Register</h1>
-        <p id = "registerInfo">Create an account now and begin your journey!</p>
+        <h1 id = "registerHead">Edit</h1>
+        <p id = "registerInfo">Change any of the fields below to update your profile</p>
         <hr>
 
         <label for="first"><b>First Name</b></label>
-        <input type="text" placeholder="Enter First Name" name="first" required>
+        <input type="text" placeholder="<%= user.name.first %>" name="first" required>
 
         <label for="last"><b>Last Name</b></label>
-        <input type="text" placeholder="Enter Last Name" name="last" required>
+        <input type="text" placeholder="<%= user.name.last %>" name="last" required>
 
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="<%= user.email %>" name="email" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="<%= user.login.password %>" name="psw" required>
 
         <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required> -->
@@ -59,11 +55,6 @@
             <option value="Images/Bubble - Search.jpg">Profile 3</option>
         </select>
 
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
-
-        <p id = "registerInfo">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
       </div>
       <div class="mContainer" style="background-color:#f1f1f1">
         <button type="submit" id="loginButton">Sign Up</button>
