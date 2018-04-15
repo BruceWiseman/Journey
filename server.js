@@ -63,6 +63,13 @@ app.get('/profile', function(req, res) {
   });
 });
 
+app.get("/edit",function(rq,res) {
+  db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
+    if (err) throw err;
+    res.render("pages/edit",{user : result});
+  });
+});
+
 //logout route
 app.get('/logout', function(req, res) {
   if(!req.session.loggedin){res.redirect('/');return;}
