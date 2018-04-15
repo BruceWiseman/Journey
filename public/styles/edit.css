@@ -5,5 +5,7 @@
 
 .editForm{
   width: 75%;
-  padding-top: 250px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
 }
