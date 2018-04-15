@@ -67,6 +67,7 @@ app.get('/profile', function(req, res) {
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
+  console.log("user logged out, bye!");
   res.redirect('/');
 });
 
@@ -93,7 +94,7 @@ var datatostore = {
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('people').save(datatostore, function(err, result) {
     if (err) throw err;
-    console.log("added to database");
+    console.log("user was added to database");
     //when complete redirect to the index
     res.redirect('/')
   })
@@ -116,6 +117,7 @@ app.post('/dologin', function(req, res) {
     if(result.login.password == pword){
       req.session.loggedin = true;
       username = result.login.username;
+      console.log("user logged in, hello!");
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
