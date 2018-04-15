@@ -4,8 +4,5 @@
   display: block;
   margin: auto;
   padding-top: 150px;
-}
-
-.mContainer{
-  filter: drop-shadow(0px 6px 6px #a6a6a6);
+  border: 1px grey;
 }
