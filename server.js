@@ -63,6 +63,7 @@ app.get('/profile', function(req, res) {
   });
 });
 
+//edit profile page
 app.get("/edit",function(rq,res) {
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
