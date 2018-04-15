@@ -123,7 +123,7 @@ app.post('/dologin', function(req, res) {
 
       //username = result.login.username;
 
-      console.log(JSON.stringify(req.session.user.login.username) " logged in, hello!");
+      console.log(JSON.stringify(req.session.user.login.username)) " logged in, hello!");
       res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/')}
