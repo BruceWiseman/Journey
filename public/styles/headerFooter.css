@@ -205,6 +205,11 @@ hr {
   border-top: 3.7px solid #39B54A;
 }
 
+#footerLogo{
+  width: 20px;
+  height: 20px;
+}
+
 #legalStuff{
   padding: 4px;
   font-size: 10px;
