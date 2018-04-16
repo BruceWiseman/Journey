@@ -205,15 +205,8 @@ hr {
   border-top: 3.7px solid #39B54A;
 }
 
-#footerLogo{
-  height: 45px;
-  width: 45px;
-  display:inline;
-  padding: 4px
-}
-
 #legalStuff{
-  padding: 10px;
+  padding: 20px;
   font-size: 12px;
   display:inline;
   font-family:sans-serif;
