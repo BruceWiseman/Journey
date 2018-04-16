@@ -1,0 +1,9 @@
+h1,h2,p{
+  font-family: sans-serif;
+}
+
+section{
+  padding-top:200px;
+  display: block;
+  margin: auto;
+}
