@@ -213,10 +213,10 @@ hr {
 }
 
 #legalStuff{
-  padding: 4px;
-  margin-top: 5px;
+  padding: 10px;
   font-size: 12px;
   display:inline;
+  font-family:sans-serif;
 }
 
 #bannerTop{
