@@ -10,6 +10,10 @@ p{
   color: grey;
 }
 
+h2{
+  text-decoration-line:underline;
+}
+
 #policy{
   padding:10%;
   padding-top:200px;
