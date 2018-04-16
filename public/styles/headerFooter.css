@@ -219,6 +219,10 @@ hr {
   text-decoration: none;
 }
 
+#links a:hover{
+  text-decoration: underline;
+}
+
 #bannerTop{
   width: 100%;
   height: 60px;
