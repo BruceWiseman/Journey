@@ -205,6 +205,11 @@ hr {
   border-top: 3.7px solid #39B54A;
 }
 
+#legalStuff{
+  padding: 4px;
+  font-size: 10px;
+}
+
 #bannerTop{
   width: 100%;
   height: 60px;
