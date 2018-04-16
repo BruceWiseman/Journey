@@ -207,9 +207,16 @@ hr {
 }
 
 #legalStuff{
-  padding: 5px;
+  padding: 3px;
+  padding-left: 15px;
   font-size: 12px;
   font-family:sans-serif;
+}
+
+#links a{
+  color: #39B54A;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #bannerTop{
