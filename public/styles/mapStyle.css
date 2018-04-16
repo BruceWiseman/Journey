@@ -153,9 +153,9 @@
   display: table;
 }
 
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 #quantity{
   width: 15%;
