@@ -206,14 +206,15 @@ hr {
 }
 
 #footerLogo{
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
   display:inline;
   padding: 4px
 }
 
 #legalStuff{
   padding: 4px;
+  margin-top: 5px;
   font-size: 12px;
   display:inline;
 }
