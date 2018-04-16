@@ -41,6 +41,11 @@ app.get('/', function(req, res) {
  res.render('pages/home');
 });
 
+//render user policy
+app.get('/userpolicy', function(req, res) {
+ res.render('pages/userpolicy');
+});
+
 //==== search page
 app.get('/search', function(req, res) {
  res.render('pages/map');

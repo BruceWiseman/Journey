@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+  <!--Colour code: 39B54A -->
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.62">
+  <title>Home - Journey</title>
+
+  <link rel="stylesheet" type="text/css" href="/styles/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="/styles/homeStyle.css">
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type = "text/javascript" src = "Api/placesApi.js"></script>
+  <script type = "text/javascript" src = "Scripts/changeTab.js"></script>
+  <!--<script type = "text/javascript" src = "Scripts/scrollScript.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section>
+  <header id = "head">
+    <% include ../partials/header %>
+  </header>
+
+  <section>
+    <h1>User Policy and Data Protection</h1>
+
+    <h2>Introduction</h2>
+    <p>
+      Journey is a web application used to find attractions such as pubs, theme parks, and other entertainment venues. <br>
+      This application was produced as a Dynamic Web Development Project, by Bartek Godon, Ross Mactaggart, Bruce Genari-Wisemane and Connor Matthews.
+    </p>
+
+    <h2>User Policy</h2>
+    <p>
+      By registering an account with Jurney, you consent to your data being stored and used by the application.
+    </p>
+
+    <h2>Honourable Mentions</h2>
+    <p>
+      John Isaacs - For fixing all the things that we managed to break.<br>
+      Craig Cargill - For providing the wonderful name that is "Journey".
+    </p>
+
+  </section>
+<!--content end  -->
+
+<!-- footer start  -->
+<footer id = "footer">
+    <% include ../partials/footer %>
+</footer>
+<!-- footer end -->
+
+<!-- =========================Modal Login/Register Forms==================== -->
+<!-- The Login Modal -->
+  <div id="id01" class="modal">
+    <% include ../partials/login %>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="id02" class="modal">
+    <% include ../partials/register %>
+  </div>
+
+  <!-- close modal if the user clicks outside the modal window -->
+  <!-- script for modal id01 (login) -->
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  var modal2 = document.getElementById('id02');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      if (event.target == modal2) {
+          modal2.style.display = "none";
+      }
+  }
+  </script>
+
+</body>
+
+</html>
