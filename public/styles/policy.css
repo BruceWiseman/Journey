@@ -18,3 +18,8 @@ h2{
   padding:10%;
   padding-top:200px;
 }
+
+#footer{
+  position: relative;
+  padding-top: 30px;
+}
