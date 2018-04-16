@@ -3,7 +3,7 @@ h1,h2,p{
 }
 
 section{
-  padding-top:200px;
+  margin-top:200px;
   display: block;
   margin: auto;
 }
