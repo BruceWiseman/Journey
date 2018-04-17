@@ -58,7 +58,7 @@ function codeAddress() {
 //when the textbox in the search div is selected to submit their serach
 function checkSubmit(){
   console.log("Hello");
-  document.getElementById('placeSearch').onkeyup = function(event){
+  document.getElementById('placeSearch').onkeydown = function(event){
     var e = event || window.event;
     if(e.keyCode == 13){
       console.log(e.keyCode);
