@@ -35,7 +35,9 @@ function codeAddress() {
   console.log("codeAddress");
   var address = document.getElementById('placeSearch').value;
   geocoder.geocode( { 'address': address}, function(results, status)  {
+    console.log("geocoder");
     if (status == 'OK') {
+      console.log("status" + status);
       map.setCenter(results[0].geometry.location);
 
       var marker = new google.maps.Marker({
@@ -58,6 +60,7 @@ function checkSubmit(){
   document.getElementById('placeSearch').onkeyup = function(event){
     var e = event || window.event;
     if(e.keyCode == 13){
+      console.log(e.keyCode);
       codeAddress();
     }
   }
