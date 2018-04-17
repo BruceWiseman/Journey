@@ -32,7 +32,7 @@ function initMap() {
 //and atempts to find and display the location on the map
 
 function codeAddress() {
-
+  console.log("codeAddress");
   var address = document.getElementById('placeSearch').value;
   geocoder.geocode( { 'address': address}, function(results, status)  {
     if (status == 'OK') {
