@@ -41,6 +41,11 @@ app.get('/', function(req, res) {
  res.render('pages/home');
 });
 
+//render user policy
+app.get('/userpolicy', function(req, res) {
+ res.render('pages/userpolicy');
+});
+
 //==== search page
 app.get('/search', function(req, res) {
  res.render('pages/map');
@@ -104,7 +109,7 @@ var datatostore = {
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('people').save(datatostore, function(err, result) {
     if (err) throw err;
-    console.log("User",JSON.stringify(req.session.user.login.username),"was added to database!");
+    console.log("User",JSON.stringify(req.body.email),"was added to database!");
     //when complete redirect to the index
     res.redirect('/')
   })
