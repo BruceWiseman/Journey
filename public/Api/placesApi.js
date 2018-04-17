@@ -34,6 +34,7 @@ function initMap() {
 function codeAddress() {
   console.log("codeAddress");
   var address = document.getElementById('placeSearch').value;
+  console.log("address:" + address);
   geocoder.geocode( { 'address': address}, function(results, status)  {
     console.log("geocoder");
     if (status == 'OK') {
