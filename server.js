@@ -111,7 +111,8 @@ var datatostore = {
     if (err) throw err;
     console.log("User",JSON.stringify(req.body.email),"was added to database!");
     //when complete redirect to the index
-    res.redirect('/')
+    return;
+    //res.redirect('/')
   })
 });
 
