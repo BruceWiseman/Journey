@@ -32,10 +32,13 @@ function initMap() {
 //and atempts to find and display the location on the map
 
 function codeAddress() {
-
+  console.log("codeAddress");
   var address = document.getElementById('placeSearch').value;
+  console.log("address:" + address);
   geocoder.geocode( { 'address': address}, function(results, status)  {
+    console.log("geocoder");
     if (status == 'OK') {
+      console.log("status" + status);
       map.setCenter(results[0].geometry.location);
 
       var marker = new google.maps.Marker({
@@ -55,9 +58,10 @@ function codeAddress() {
 //when the textbox in the search div is selected to submit their serach
 function checkSubmit(){
   console.log("Hello");
-  document.getElementById('placeSearch').onkeyup = function(event){
+  document.getElementById('placeSearch').onkeydown = function(event){
     var e = event || window.event;
     if(e.keyCode == 13){
+      console.log(e.keyCode);
       codeAddress();
     }
   }
