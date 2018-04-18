@@ -40,7 +40,7 @@ document.addEventListener('keydown', function(e) {
 
 
 function activateKonami() {
-  document.body.style.backgroundImage = 'images/Konami.jpg';
+  document.body.style.backgroundImage = "url('images/Konami.jpg')";
 
   var audio = new Audio('audio/konamiCode.mp3');
   audio.play();
