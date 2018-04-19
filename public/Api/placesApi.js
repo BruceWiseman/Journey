@@ -236,14 +236,6 @@
       if (status == 'OK') {
         map.setCenter(results[0].geometry.location);
 
-        var image = {
-              url: results[0].icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-            };
-
         var marker = new google.maps.Marker({
             map: map,
             icon: image,
