@@ -207,6 +207,7 @@
       var button = document.createElement('a');
       var buttonText = document.createTextNode("Add to Favourites");
       button.setAttribute('href', "http://google.com");
+      button.setAttribute('id', "addFav");
       button.appendChild(buttonText);
 
       h3.textContent = place.name;
