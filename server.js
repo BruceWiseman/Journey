@@ -167,7 +167,7 @@ app.post('/addfavourite', function(req, res) {
   if(!req.session.loggedin){res.redirect('/');return;}
 
   db.collection('people').findOne({"login.username":req.session.user.login.username}, function(err, result) {
-    db.collection("people").update({"_id": result._id},{$push:{"favourites" : "place":{"name":req.body.resultHead, "address":req.body.resultPara }}});
+    db.collection("people").update({"_id": result._id},{$push:{"favourites" : {"name":req.body.resultHead, "address":req.body.resultPara }}});
   });
 
   res.redirect("/profile");
