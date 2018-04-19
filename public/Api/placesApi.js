@@ -112,8 +112,8 @@
       button.setAttribute('id', "addFav");
       button.appendChild(buttonText);
 
-      h3.textContent = place.name;
-      p.textContent = "Address: "+place.vicinity;
+      h3.value = place.name;
+      p.value = "Address: "+place.vicinity;
 
       div.appendChild(h3);
       div.appendChild(p);
