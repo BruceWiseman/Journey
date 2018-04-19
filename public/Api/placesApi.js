@@ -123,6 +123,14 @@
 
     initialize();
 
+    //get the places div (result output)
+    var div = document.getElementById('places');
+
+    //remove any outputs in the results div
+    while(div.firstChild){
+      div.removeChild(div.firstChild);
+    };
+
     //select the places div
     var placesList = document.getElementById('places');
 
@@ -141,32 +149,6 @@
           map.setZoom(18);
           map.setCenter(marker.getPosition());
         });
-
-        //generate place result info div
-        var div = document.createElement('div');
-        div.setAttribute("id","resultDiv");
-
-        var h3 = document.createElement("h3");
-        h3.setAttribute("id","resultHead");
-
-        var p = document.createElement("p");
-        p.setAttribute("id","resultPara");
-
-        var button = document.createElement('a');
-        var buttonText = document.createTextNode("Add to Favourites");
-        button.setAttribute('href', "http://google.com");
-        button.setAttribute('id', "addFav");
-        button.appendChild(buttonText);
-
-        h3.textContent = results[0].name;
-        p.textContent = "Address: "+results[0].vicinity;
-
-        div.appendChild(h3);
-        div.appendChild(p);
-        div.appendChild(button);
-
-        //add info div into the result list
-        placesList.appendChild(div);
 
         map.setZoom(15);
       }
