@@ -27,6 +27,7 @@
 }
 
 #search{
+  background-color: rgba(220,220,220, .75);
   width:auto;
   /*box-shadow: 0px 10px 13px  #cccccc;*/
   height: auto;
@@ -181,7 +182,6 @@
 }
 
 #resultDiv{
-  background-color: rgba(220,220,220, .75);
   font-size: 17px;
   font-family: sans-serif;
 }
