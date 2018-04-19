@@ -181,6 +181,7 @@
 }
 
 #resultDiv{
+  background-color: rgba(220,220,220, .75);
   font-size: 17px;
   font-family: sans-serif;
 }
