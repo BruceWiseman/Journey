@@ -177,6 +177,8 @@
 }
 
 #resultDiv{
+  color: #39B54A;
+  color: gray;
   font-size: 17px;
   font-family: sans-serif;
 }
@@ -184,4 +186,5 @@
 #resultsHeader{
   font-size: 17px;
   font-family: sans-serif;
+
 }
