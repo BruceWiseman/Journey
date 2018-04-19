@@ -183,6 +183,7 @@
 
 #resultDiv{
   margin-bottom: 20px;
+  border-bottom: 2px, #39B54A; 
   font-size: 17px;
   font-family: sans-serif;
 }
