@@ -205,7 +205,7 @@
 
 }
 #searchResults{
-  height: 150px;
+  height: 450px;
   overflow: scroll;
   overflow-x:hidden;
 }
