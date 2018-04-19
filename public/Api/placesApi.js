@@ -67,6 +67,9 @@
       //get the geometry location of the input place
       var placeLoc = place.geometry.location;
 
+      var div = document.getElementById("searchResults");
+      div.style.display = "block";
+
       //generate an icon image for the place
       var image = {
             url: place.icon,

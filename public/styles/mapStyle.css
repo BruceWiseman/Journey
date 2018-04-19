@@ -158,6 +158,10 @@
   box-sizing: border-box;
 }
 
+#searchResults{
+  display: none;
+}
+
 #quantity{
   width: 15%;
   float: left;
