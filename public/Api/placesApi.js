@@ -228,6 +228,9 @@
 
     initialize();
 
+    //select the places div
+    var placesList = document.getElementById('places');
+
     var address = document.getElementById('placeSearch').value;
     geocoder.geocode( { 'address': address}, function(results, status)  {
       if (status == 'OK') {
