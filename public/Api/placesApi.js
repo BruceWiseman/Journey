@@ -93,18 +93,22 @@
       });
 
       //generate place result info div
-      var div = document.createElement('div');
+      var div = document.createElement('form');
       div.setAttribute("id","resultDiv");
+      div.method = "POST";
+      div.action = "/addfavourite";
 
-      var h3 = document.createElement("h3");
+      var h3 = document.createElement("input");
       h3.setAttribute("id","resultHead");
+      h3.name = "resultHead";
 
-      var p = document.createElement("p");
+      var p = document.createElement("input");
       p.setAttribute("id","resultPara");
+      p.name = "resultHead";
 
-      var button = document.createElement('a');
+      var button = document.createElement('button');
       var buttonText = document.createTextNode("Add to Favourites");
-      button.setAttribute('href', "/addfavourite");
+      button.setAttribute('type', "submit");
       button.setAttribute('id', "addFav");
       button.appendChild(buttonText);
 
