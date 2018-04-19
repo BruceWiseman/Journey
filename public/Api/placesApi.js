@@ -221,22 +221,60 @@
       placesList.appendChild(div);
   };
 
-  // function codeAddress() {
-  //
-  //   var address = document.getElementById('address').value;
-  //   geocoder.geocode( { 'address': address}, function(results, status)  {
-  //     if (status == 'OK') {
-  //       map.setCenter(results[0].geometry.location);
-  //
-  //       var marker = new google.maps.Marker({
-  //           map: map,
-  //           position: results[0].geometry.location
-  //       });
-  //       map.setZoom(15);
-  //     }
-  //     else
-  //     {
-  //       alert('Geocode was not successful for the following reason: ' + status);
-  //     }
-  //   });
-  // }
+
+
+
+  function codeAddress() {
+
+    initialoze();
+
+    var address = document.getElementById('placeSearch').value;
+    geocoder.geocode( { 'address': address}, function(results, status)  {
+      if (status == 'OK') {
+        map.setCenter(results[0].geometry.location);
+
+        var image = {
+              url: results[0].icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: image,
+            position: results[0].geometry.location
+        });
+
+        //generate place result info div
+        var div = document.createElement('div');
+        div.setAttribute("id","resultDiv");
+
+        var h3 = document.createElement("h3");
+        h3.setAttribute("id","resultHead");
+
+        var p = document.createElement("p");
+        p.setAttribute("id","resultPara");
+
+        var button = document.createElement('a');
+        var buttonText = document.createTextNode("Add to Favourites");
+        button.setAttribute('href', "http://google.com");
+        button.setAttribute('id', "addFav");
+        button.appendChild(buttonText);
+
+        h3.textContent = results[0].name;
+        p.textContent = "Address: "+results[0].vicinity;
+
+        div.appendChild(h3);
+        div.appendChild(p);
+        div.appendChild(button);
+
+        //add info div into the result list
+        placesList.appendChild(div);
+
+        map.setZoom(15);
+      }
+
+    });
+  }
