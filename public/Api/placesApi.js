@@ -104,7 +104,7 @@
 
       var p = document.createElement("input");
       p.setAttribute("id","resultPara");
-      p.name = "resultHead";
+      p.name = "resultPara";
 
       var button = document.createElement('button');
       var buttonText = document.createTextNode("Add to Favourites");
