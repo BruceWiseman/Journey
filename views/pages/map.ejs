@@ -19,15 +19,12 @@
   </header>
 
 <div id="map"></div>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initMap&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places">
+</script>
 
 
 
 <!--test-->
-
-
-
-
 <div id="searchArea">
   <section id = "search">
 
@@ -40,11 +37,11 @@
 
     <!-- Tab content -->
     <form id ="tab1" class="tabcontent">
-      <input id = "placeSearch" type = "textbox" onkeydown = "checkSubmit()" placeholder = " Search for a place...">
+      <input id = "placeSearch" type = "textbox" placeholder = " Search for a place...">
       <button id="searchB" type="submit" onclick="codeAddress()"><i class="fa fa-search"></i></button>
     </form>
 
-    <form id ="tab2" class="tabcontent" onsubmit="return false">
+    <form id ="tab2" class="tabcontent" onsubmit="#">
             <div id = "list">
                   <select id = "categorySelect">
                       <option value="0">Select attraction category...</option>
@@ -75,6 +72,14 @@
 
   </section>
   <!-- search tab end -->
+
+  <div id = "search">
+    <div id = "searchResults">
+      <h2>Results</h2>
+      <div id = "places"></ul>
+    </div>
+  </div>
+  
 </div>
 
 <!-- footer start  -->
