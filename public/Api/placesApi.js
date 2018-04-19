@@ -126,7 +126,7 @@
   //search for places based on category
   function categorySearch() {
     //check if all required search parameters are valid, if not return
-    if(document.getElementById("categorySelect").value == "0" || document.getElementById("categorySelect").value < 1){return};
+    if(document.getElementById("categorySelect").value == "0" || document.getElementById("quantity").value < 1){return};
 
     //reset map to remove markers
     initialize();
@@ -220,22 +220,22 @@
       placesList.appendChild(div);
   };
 
-  function codeAddress() {
-
-    var address = document.getElementById('address').value;
-    geocoder.geocode( { 'address': address}, function(results, status)  {
-      if (status == 'OK') {
-        map.setCenter(results[0].geometry.location);
-
-        var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location
-        });
-        map.setZoom(15);
-      }
-      else
-      {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
-  }
+  // function codeAddress() {
+  //
+  //   var address = document.getElementById('address').value;
+  //   geocoder.geocode( { 'address': address}, function(results, status)  {
+  //     if (status == 'OK') {
+  //       map.setCenter(results[0].geometry.location);
+  //
+  //       var marker = new google.maps.Marker({
+  //           map: map,
+  //           position: results[0].geometry.location
+  //       });
+  //       map.setZoom(15);
+  //     }
+  //     else
+  //     {
+  //       alert('Geocode was not successful for the following reason: ' + status);
+  //     }
+  //   });
+  // }
