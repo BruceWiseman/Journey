@@ -161,7 +161,7 @@ app.post('/doedit', function(req, res) {
   });
 
 //a route to add favourite to user profile
-app.get('/addfavourite', function(req, res) {
+app.post('/addfavourite', function(req, res) {
 
   //check if user is logged in
   if(!req.session.loggedin){res.redirect('/');return;}
