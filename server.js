@@ -159,3 +159,17 @@ app.post('/doedit', function(req, res) {
     //render the profile page
     res.redirect("/profile");
   });
+
+//a route to add favourite to user profile
+app.post('/addfavourite', function(req, res) {
+
+  //check if user is logged in
+  if(!req.session.loggedin){res.redirect('/');return;}
+
+  db.collection('people').findOne({"login.username":req.session.user.login.username}, function(err, result) {
+    db.collection("people").save({ "_id" :result._id, "place":req.body.resultHead, "address":req.body.resultPara })
+  });
+
+
+
+});

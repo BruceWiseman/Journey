@@ -104,7 +104,7 @@
 
       var button = document.createElement('a');
       var buttonText = document.createTextNode("Add to Favourites");
-      button.setAttribute('href', "http://google.com");
+      button.setAttribute('href', "/addfavourite");
       button.setAttribute('id', "addFav");
       button.appendChild(buttonText);
 
