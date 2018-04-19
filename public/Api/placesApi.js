@@ -226,7 +226,7 @@
 
   function codeAddress() {
 
-    initialoze();
+    initialize();
 
     var address = document.getElementById('placeSearch').value;
     geocoder.geocode( { 'address': address}, function(results, status)  {
