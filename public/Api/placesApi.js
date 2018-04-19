@@ -238,7 +238,6 @@
 
         var marker = new google.maps.Marker({
             map: map,
-            icon: image,
             position: results[0].geometry.location
         });
 
