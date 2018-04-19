@@ -170,6 +170,5 @@ app.post('/addfavourite', function(req, res) {
     db.collection("people").save({ "_id" :result._id, "place":req.body.resultHead, "address":req.body.resultPara })
   });
 
-
-
+  res.redirect("/profile");
 });
