@@ -131,7 +131,7 @@
       div.removeChild(div.firstChild);
     };
 
-    div.setAttribute("display","none");
+    div.style.display = "none";
 
     //select the places div
     var placesList = document.getElementById('places');
