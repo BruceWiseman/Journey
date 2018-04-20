@@ -100,10 +100,12 @@
 
       var h3 = document.createElement("input");
       h3.setAttribute("id","resultHead");
+      h3.setAttribute("readonly");
       h3.name = "resultHead";
 
       var p = document.createElement("input");
       p.setAttribute("id","resultPara");
+      p.setAttribute("readonly");
       p.name = "resultPara";
 
       var button = document.createElement('button');
