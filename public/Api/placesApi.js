@@ -109,11 +109,10 @@
       p.name = "resultPara";
 
       var button = document.createElement('button');
-      //var buttonText = document.createTextNode("Add to Favourites");
+      var buttonText = document.createTextNode("Add to Favourites");
       button.setAttribute('type', "submit");
       button.setAttribute('id', "addFav");
-      button.setAttribute("class","far fa-star")
-      //button.appendChild(buttonText);
+      button.appendChild(buttonText);
 
       h3.value = place.name;
       p.value = "Address: "+place.vicinity;
