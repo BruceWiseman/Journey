@@ -173,16 +173,20 @@
 
 #resultHead{
   color: gray;
+  background-color:inherit;
   padding-left: 25px;
   font-size: 17px;
   font-family: sans-serif;
+  outline: none;
 }
 
 #resultPara{
   color: gray;
+  background-color:inherit;
   padding-left: 25px;
   font-size: 15px;
   font-family: sans-serif;
+  outline: none;
 }
 
 #resultDiv{
@@ -201,7 +205,6 @@
 }
 
 #addFav{
-
   color: gray;
   padding-left: 25px;
   font-size: 12px;
