@@ -164,7 +164,7 @@ app.post('/doedit', function(req, res) {
 app.post('/addfavourite', function(req, res) {
 
   //check if user is logged in
-  if(!req.session.loggedin){res.redirect('/');return;}
+  if(!req.session.loggedin){return;}
 
   db.collection('people').findOne({"login.username":req.session.user.login.username}, function(err, result) {
     db.collection("people").update({"_id": result._id},{$push:{"favourites" : {"name":req.body.resultHead, "address":req.body.resultPara }}});
