@@ -171,24 +171,18 @@
   color: grey;
 }
 
-#resultHead{
+#resultPara,#resultHead{
   color: gray;
-  background-color:inherit;
   padding-left: 25px;
   font-size: 17px;
   font-family: sans-serif;
   outline: none;
   box-shadow: none;
-}
-
-#resultPara{
-  color: gray;
-  background-color:inherit;
-  padding-left: 25px;
-  font-size: 15px;
-  font-family: sans-serif;
-  outline: none;
-  box-shadow: none;
+  background: transparent;
+  border-top: transparent !important;
+  border-left: transparent !important;
+  border-right: transparent !important;
+  border-bottom: 4px solid !important;
 }
 
 #resultDiv{
