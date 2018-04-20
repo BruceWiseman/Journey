@@ -178,6 +178,7 @@
   font-size: 17px;
   font-family: sans-serif;
   outline: none;
+  box-shadow: none;
 }
 
 #resultPara{
@@ -187,6 +188,7 @@
   font-size: 15px;
   font-family: sans-serif;
   outline: none;
+  box-shadow: none;
 }
 
 #resultDiv{
