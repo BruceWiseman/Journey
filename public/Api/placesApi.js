@@ -100,12 +100,10 @@
 
       var h3 = document.createElement("input");
       h3.setAttribute("id","resultHead");
-      h3.setAttribute("readonly");
       h3.name = "resultHead";
 
       var p = document.createElement("input");
       p.setAttribute("id","resultPara");
-      p.setAttribute("readonly");
       p.name = "resultPara";
 
       var button = document.createElement('button');
@@ -113,6 +111,9 @@
       button.setAttribute('type', "submit");
       button.setAttribute('id', "addFav");
       button.appendChild(buttonText);
+
+      document.getElementById("resultPara").readOnly = true;
+      document.getElementById("resultHead").readOnly = true;
 
       h3.value = place.name;
       p.value = "Address: "+place.vicinity;
