@@ -173,6 +173,7 @@
 
 #resultPara,#resultHead{
   color: gray;
+  width: 100%;
   padding-left: 25px;
   font-size: 17px;
   font-family: sans-serif;
@@ -182,7 +183,7 @@
   border-top: transparent !important;
   border-left: transparent !important;
   border-right: transparent !important;
-  border-bottom: 4px solid !important;
+  border-bottom: transparent !important;
 }
 
 #resultDiv{
