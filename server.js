@@ -8,6 +8,8 @@ const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
+var loggedin = false;
+
 //use sessions
 app.use(session({ secret: 'example' }));
 
@@ -133,6 +135,8 @@ app.post('/dologin', function(req, res) {
       req.session.loggedin = true;
       //set the result as the current session user
       req.session.user = result;
+
+      loggedin = true;
 
       //username = result.login.username;
 
