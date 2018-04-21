@@ -167,7 +167,7 @@ font-family: sans-serif  font-weight: 600;
 .sidebar-two {
   /* Spaces the columns equally */
   flex: 2;
-  order: 2;
+  order: 3;
   text-align: center;
 }
 .sidebar-three {
