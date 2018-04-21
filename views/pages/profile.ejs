@@ -91,10 +91,10 @@
 
       <div class="sidebar-one">
         <h3>Name:</h3>
-        <% user.favourites.forEach(function(favourites) { %>
+        <% for (var i = 0; i < user.favourites.length; i++) { %>
           <p>hello</p>
-          <p><% user.favourites.place.name %></p>
-        <% }); %>
+          <p><% user.favourites.place[i].name %></p>
+        <% } %>
       </div>
 
       <div class="sidebar-two">
