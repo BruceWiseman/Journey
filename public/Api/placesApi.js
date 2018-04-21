@@ -106,22 +106,28 @@
       div.setAttribute("id","resultDiv");
       div.method = "POST";
       div.action = "/addfavourite";
-
+      //name
       var h3 = document.createElement("input");
       h3.setAttribute("id","resultHead");
       h3.setAttribute("readonly","true");
       h3.name = "resultHead";
-
+      //address
       var p = document.createElement("input");
       p.setAttribute("id","resultPara");
       p.setAttribute("readonly","true");
       p.name = "resultPara";
-
-      var button = document.createElement('button');
+      //go to on map
+      var buttonMap = document.createElement('button');
+      var buttonText = document.createTextNode("Show on Map");
+      //button.setAttribute('type', "submit");
+      buttonMap.setAttribute('id', "addFav");
+      buttonMap.appendChild(buttonText);
+      //add to favourites
+      var buttonFav = document.createElement('button');
       var buttonText = document.createTextNode("Add to Favourites");
-      button.setAttribute('type', "submit");
-      button.setAttribute('id', "addFav");
-      button.appendChild(buttonText);
+      buttonFav.setAttribute('type', "submit");
+      buttonFav.setAttribute('id', "addFav");
+      buttonFav.appendChild(buttonText);
 
       h3.value = place.name;
       p.value = place.vicinity;
