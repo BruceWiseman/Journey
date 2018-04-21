@@ -92,6 +92,13 @@
         map.setCenter(marker.getPosition());
       });
 
+      //display info bubble on marker click
+      marker.addListener('click', function() {
+              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+              place.vicinity + '</div>');
+              infowindow.open(map, this);
+            });
+
       //generate place result info div
       var div = document.createElement('form');
       div.setAttribute("id","resultDiv");
