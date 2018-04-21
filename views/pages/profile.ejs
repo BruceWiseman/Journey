@@ -35,7 +35,7 @@
       <!-- <img src="profile.png" alt="placeholder" style="width:50%"> -->
     </div>
 
-    <h4 class="username">Hello <%= user.name.first %> <%= user.name.last %></h4>
+    <h4 class="username">Hello, <%= user.name.first %> <%= user.name.last %></h4>
 
     <p>Experience Bar</p>
     <div class="exp">
@@ -50,7 +50,7 @@
 
       <div class="stat column">
         <p class="desc-stat">Amount of Favourites:</p>
-        <p class="number-stat">0</p>
+        <p class="number-stat"><%= user.favourites.length %></p>
       </div>
     </div>
 
