@@ -218,7 +218,7 @@
       buttonFav.setAttribute('id', "addFav");
       buttonFav.appendChild(buttonText);
 
-      h3.value = place.address_components.short_name;
+      h3.value = place.address_components[0];
       p.value = place.formatted_address;
 
       div.appendChild(h3);
