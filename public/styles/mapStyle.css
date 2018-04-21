@@ -218,7 +218,6 @@
   text-decoration: underline;
 }
 #searchResults{
-
   max-height: 400px;
   overflow: scroll;
   overflow-x:hidden;
