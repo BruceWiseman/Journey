@@ -218,7 +218,8 @@
   text-decoration: underline;
 }
 #searchResults{
-  height: 450px;
+  height:100%;
+  max-height: 425px;
   overflow: scroll;
   overflow-x:hidden;
 }
