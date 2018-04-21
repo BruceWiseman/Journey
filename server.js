@@ -102,7 +102,7 @@ var datatostore = {
   "email":req.body.email,
   "registered":Date(),
   "avatar":req.body.avatar,
-  "favourites":[]
+  "favourites":{}
 };
 
 
