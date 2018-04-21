@@ -187,6 +187,11 @@
   border-bottom: transparent !important;
 }
 
+#resultHead{
+  color: #39B54A;
+  font-size: 19px;
+}
+
 #resultDiv{
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -196,10 +201,10 @@
 }
 
 #resultsHeader{
-  padding:3px;
+  padding:1px;
   padding-left: 25px;
-  color: green;
-  font-size: 25px;
+  color: #39B54A;
+  font-size: 22px;
   font-family: sans-serif;
 }
 
