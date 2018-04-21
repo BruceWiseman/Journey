@@ -100,8 +100,8 @@
               place.vicinity + '</div>');
               infowindow.open(map, this);
             });
-
-      createInfo(place);
+      //generate result info
+      createInfo(place,placesList);
   };
 
 
@@ -149,7 +149,7 @@
 
 
 //create info div
-  function createInfo(place){
+  function createInfo(place,placesList){
     //generate place result info div
     var div = document.createElement('form');
     div.setAttribute("id","resultDiv");
