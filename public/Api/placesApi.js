@@ -122,11 +122,13 @@
       buttonMap.setAttribute('id', "addFav");
       buttonMap.appendChild(buttonText);
 
-      buttonMap.addListener(marker, "click",function() {
+      goTo(marker, "click", function() {
         map.setZoom(17);
         map.setCenter(marker.getPosition());
       });
-      
+
+      buttonFav.setAttribute('onclick', "goTo()");
+
       //add to favourites
       var buttonFav = document.createElement('button');
       var buttonText = document.createTextNode("Add to Favourites");
