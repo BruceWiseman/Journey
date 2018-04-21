@@ -93,6 +93,8 @@
       });
 
       //display info bubble on marker click
+      var infowindow = new google.maps.InfoWindow();
+
       google.maps.event.addListener(marker,'click', function() {
               infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
               place.vicinity + '</div>');
