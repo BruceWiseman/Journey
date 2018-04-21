@@ -101,44 +101,7 @@
               infowindow.open(map, this);
             });
 
-      //generate place result info div
-      var div = document.createElement('form');
-      div.setAttribute("id","resultDiv");
-      div.method = "POST";
-      div.action = "/addfavourite";
-      //name
-      var h3 = document.createElement("input");
-      h3.setAttribute("id","resultHead");
-      h3.setAttribute("readonly","true");
-      h3.name = "resultHead";
-      //address
-      var p = document.createElement("input");
-      p.setAttribute("id","resultPara");
-      p.setAttribute("readonly","true");
-      p.name = "resultPara";
-      //go to on map
-      var buttonMap = document.createElement('button');
-      var buttonText = document.createTextNode("Show on Map");
-      buttonMap.setAttribute('id', "addFav");
-      buttonMap.appendChild(buttonText);
-
-      //add to favourites
-      var buttonFav = document.createElement('button');
-      var buttonText = document.createTextNode("Add to Favourites");
-      buttonFav.setAttribute('type', "submit");
-      buttonFav.setAttribute('id', "addFav");
-      buttonFav.appendChild(buttonText);
-
-      h3.value = place.name;
-      p.value = place.vicinity;
-
-      div.appendChild(h3);
-      div.appendChild(p);
-      div.appendChild(buttonMap);
-      div.appendChild(buttonFav);
-
-      //add info div into the result list
-      placesList.appendChild(div);
+      createInfo(place);
   };
 
 
@@ -182,4 +145,47 @@
       }
 
     });
+  }
+
+
+//create info div
+  function createInfo(place){
+    //generate place result info div
+    var div = document.createElement('form');
+    div.setAttribute("id","resultDiv");
+    div.method = "POST";
+    div.action = "/addfavourite";
+    //name
+    var h3 = document.createElement("input");
+    h3.setAttribute("id","resultHead");
+    h3.setAttribute("readonly","true");
+    h3.name = "resultHead";
+    //address
+    var p = document.createElement("input");
+    p.setAttribute("id","resultPara");
+    p.setAttribute("readonly","true");
+    p.name = "resultPara";
+    //go to on map
+    var buttonMap = document.createElement('button');
+    var buttonText = document.createTextNode("Show on Map");
+    buttonMap.setAttribute('id', "addFav");
+    buttonMap.appendChild(buttonText);
+
+    //add to favourites
+    var buttonFav = document.createElement('button');
+    var buttonText = document.createTextNode("Add to Favourites");
+    buttonFav.setAttribute('type', "submit");
+    buttonFav.setAttribute('id', "addFav");
+    buttonFav.appendChild(buttonText);
+
+    h3.value = place.name;
+    p.value = place.vicinity;
+
+    div.appendChild(h3);
+    div.appendChild(p);
+    div.appendChild(buttonMap);
+    div.appendChild(buttonFav);
+
+    //add info div into the result list
+    placesList.appendChild(div);
   }
