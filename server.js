@@ -54,7 +54,7 @@ app.get('/search', function(req, res) {
 //==== profile page
 app.get('/profile', function(req, res) {
 
-  if(!req.session.loggedin){res.redirect('/');return;}
+  if(!req.session.loggedin){res.redirect('back');return;}
 
   //get the requested user based on their username,
   //console.log(JSON.stringify(username))
@@ -111,7 +111,7 @@ var datatostore = {
     if (err) throw err;
     console.log("User",JSON.stringify(req.body.email),"was added to database!");
     //when complete redirect to the index
-    res.redirect('/')
+    res.redirect('back')
   })
 });
 
@@ -127,7 +127,7 @@ app.post('/dologin', function(req, res) {
   db.collection('people').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
-    if(!result){res.redirect('/');return}
+    if(!result){res.redirect('back');return}
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
@@ -137,9 +137,9 @@ app.post('/dologin', function(req, res) {
       //username = result.login.username;
 
       console.log(JSON.stringify(req.session.user.login.username), "logged in, hello!");
-      res.redirect('/') }
+      res.redirect('/profile') }
     //otherwise send them back to login
-    else{res.redirect('/')}
+    else{res.redirect('back')}
 
   });
 });
