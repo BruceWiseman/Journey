@@ -134,7 +134,8 @@
 
       div.appendChild(h3);
       div.appendChild(p);
-      div.appendChild(button);
+      div.appendChild(buttonMap);
+      div.appendChild(buttonFav);
 
       //add info div into the result list
       placesList.appendChild(div);
