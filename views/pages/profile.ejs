@@ -91,17 +91,17 @@
 
       <div class="sidebar-one">
         <h3>Name:</h3>
+        <!-- name output  -->
         <% for (var i = 0; i < user.favourites.length; i++) { %>
           <p><%= user.favourites[i].place.name %></p>
         <% } %>
       </div>
 
       <div class="sidebar-two">
-        <h3>City:</h3>
-        <p>Aberdeen</p>
-        <p>Aberdeen</p>
-        <p>Paris</p>
-        <p>Aberdeen</p>
+        <h3>Address:</h3>
+        <% for (var i = 0; i < user.favourites.length; i++) { %>
+          <p><%= user.favourites[i].place.address %></p>
+        <% } %>
       </div>
 
       <div class="sidebar-three">
