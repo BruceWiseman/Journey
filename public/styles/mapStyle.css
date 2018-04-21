@@ -9,7 +9,6 @@
   border: none;
   z-index: 1;
   opacity: 1;
-  filter: grayscale(50%);
 }
 
 /*------------------------Search tab style--------------------------  */
