@@ -91,10 +91,9 @@
 
       <div class="sidebar-one">
         <h3>Name:</h3>
-        <p>Cadonnas</p>
-        <p>Triple Kirks</p>
-        <p>Disney Land</p>
-        <p>Tunnels</p>
+        <% for (var i = 0; i < user.favourites.length; i++) { %>
+          <p><% user.favourites.name %></p>
+        <% } %>
       </div>
 
       <div class="sidebar-two">
