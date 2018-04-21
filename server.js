@@ -37,7 +37,7 @@ MongoClient.connect(url, function(err, database) {
 
 // use res.render to load up an ejs view file
 // ====home page
-app.get('/', function(req, res) {
+app.get('/', function(loggedin, res) {
  res.render('pages/home');
 });
 
