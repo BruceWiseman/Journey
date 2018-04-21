@@ -139,7 +139,7 @@
         });
 
         map.setZoom(15);
-        createInfo(results[0],placesList);
+        createInfo(results[0],div);
       }
     });
 
