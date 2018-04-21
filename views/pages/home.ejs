@@ -18,7 +18,12 @@
 <body>
 <section>
   <header id = "head">
-    <% include ../partials/header %>
+    <% if (!req.session.loggedin){ %>
+      <% include ../partials/header %>
+    <% } %>
+    <% else { %>
+      <% include ../partials/headerAlt %>
+    <% } %>
   </header>
 
 <!-- ===========================search tab start=========================== -->
