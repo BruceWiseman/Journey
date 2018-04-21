@@ -206,7 +206,7 @@
   padding-left: 25px;
   font-size: 12px;
   font-family: sans-serif;
-
+  border: none;
 }
 #searchResults{
   height: 450px;
