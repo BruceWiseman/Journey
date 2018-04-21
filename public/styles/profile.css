@@ -166,7 +166,7 @@ font-family: sans-serif  font-weight: 600;
 }
 .sidebar-two {
   /* Spaces the columns equally */
-  flex: 1;
+  flex: 2;
   order: 2;
   text-align: center;
 }
