@@ -8,8 +8,6 @@ const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 
-var loggedin = false;
-
 //use sessions
 app.use(session({ secret: 'example' }));
 
@@ -39,7 +37,7 @@ MongoClient.connect(url, function(err, database) {
 
 // use res.render to load up an ejs view file
 // ====home page
-app.get('/', function(loggedin: true , res) {
+app.get('/', function(req, res) {
  res.render('pages/home');
 });
 
@@ -135,8 +133,6 @@ app.post('/dologin', function(req, res) {
       req.session.loggedin = true;
       //set the result as the current session user
       req.session.user = result;
-
-      loggedin = true;
 
       //username = result.login.username;
 
