@@ -43,19 +43,9 @@
 
     <form id ="tab2" class="tabcontent" onsubmit="return false">
             <div id = "list">
-                  <select id = "categorySelect">
-                      <option value="0">Select attraction category...</option>
-                      <option value="amusement_park">Amusement Park</option>
-                      <option value="aquarium">Aquarium</option>
-                      <option value="art_gallery">Art Gallery</option>
-                      <option value="bar">Bar</option>
-                      <option value="bowling_alley">Bowling Alley</option>
-                      <option value="museum">Museum</option>
-                      <option value="restaurant">Restaurant</option>
-                      <option value="spa">Spa</option>
-                      <option value="stadium">Stadium</option>
-                      <option value="zoo">Zoo</option>
-                  </select>
+
+                  <% include ../partials/list %>
+
                   <input type="number" id = "quantity" placeholder = "Radius" min="1" max="50" value="0">
                   <!-- <input type ="button" id ="categorySearch" onclick="categorySearch()"><i class="fa fa-search"></i></button> -->
                   <!-- <input type = "button" value = "Search" onclick="categorySearch()"> -->

@@ -40,14 +40,7 @@
 
       <form id ="tab2" class="tabcontent">
         <div id = "list">
-              <select id = "categorySelect">
-                  <option value="0">Select attraction category...</option>
-                  <option value="1">Theme Park</option>
-                  <option value="2">Restaurant</option>
-                  <option value="3">Museum</option>
-                  <option value="4">Bar</option>
-                  <option value="5">Famous Places</option>
-              </select>
+            <% include ../partials/list %>
           </div>
           <input type="number" id = "quantity" placeholder = "Radius" min="1" max="100">
           <button type="submit"><i class="fa fa-search"></i></button>
