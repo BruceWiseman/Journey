@@ -120,10 +120,7 @@
     };
 
     var div2 = document.getElementById("searchResults");
-    div2.style.display = "none";
-
-    //select the places div
-    var placesList = document.getElementById('places');
+    //div2.style.display = "none";
 
     var address = document.getElementById('placeSearch').value;
     geocoder.geocode( { 'address': address}, function(results, status)  {
@@ -142,9 +139,10 @@
         });
 
         map.setZoom(15);
+        createInfo(results[0],placesList);
       }
-
     });
+
   }
 
 
