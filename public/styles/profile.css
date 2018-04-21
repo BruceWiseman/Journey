@@ -144,6 +144,7 @@ font-family: sans-serif  font-weight: 600;
 
 .favourites {
   text-align: center;
+  color: green;
 }
 
 .column-layout {
@@ -198,6 +199,7 @@ font-family: sans-serif  font-weight: 600;
 
 p{
   color: grey;
+  min-width:500px;
 }
 
 h3{
