@@ -115,7 +115,7 @@
       button.appendChild(buttonText);
 
       h3.value = place.name;
-      p.value = "Address: "+place.vicinity;
+      p.value = place.vicinity;
 
       div.appendChild(h3);
       div.appendChild(p);
