@@ -13,7 +13,7 @@
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: aberdeen,
-        zoom: 13,
+        zoom: 16,
         disableDefaultUI: true
       });
   };
