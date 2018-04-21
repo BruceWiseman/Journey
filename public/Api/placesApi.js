@@ -120,7 +120,7 @@
     };
 
     var div2 = document.getElementById("searchResults");
-    //div2.style.display = "none";
+    div2.style.display = "block";
 
     var address = document.getElementById('placeSearch').value;
     geocoder.geocode( { 'address': address}, function(results, status)  {
@@ -218,7 +218,7 @@
       buttonFav.setAttribute('id', "addFav");
       buttonFav.appendChild(buttonText);
 
-      h3.value = place.address_components[0];
+      h3.value = place.address_components[0].short_name;
       p.value = place.formatted_address;
 
       div.appendChild(h3);
