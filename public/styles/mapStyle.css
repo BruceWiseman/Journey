@@ -207,6 +207,8 @@
   font-size: 12px;
   font-family: sans-serif;
   border: none;
+  background-color: inherit;
+  text-decoration: underline;
 }
 #searchResults{
   height: 450px;
