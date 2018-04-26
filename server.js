@@ -64,7 +64,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile',{loggedin:req.session.loggedin},{user : result});
+    res.render('pages/profile',{user : result, loggedin : req.session.loggedin});
   });
 });
 
