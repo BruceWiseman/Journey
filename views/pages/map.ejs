@@ -13,18 +13,21 @@
 </head>
 
 <body>
-
+  <!-- header start -->
   <header id = "head">
     <% include ../partials/header %>
   </header>
+  <!-- header end -->
 
+<!-- initialize the map  -->
 <div id="map"></div>
+<!-- api key (GOOGLE Places) -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places">
 </script>
 
 
 
-<!--test-->
+<!--Search area start-->
 <div id="searchArea">
   <section id = "search">
 
@@ -32,7 +35,7 @@
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Name</button>
       <button class="tablinks" onclick="openCity(event, 'tab2')">Category</button>
-      <button class="tablinks" onclick="openCity(event, 'tab3')">Favourites</button>
+      <!-- <button class="tablinks" onclick="openCity(event, 'tab3')">Favourites</button> -->
     </div>
 
     <!-- Tab content -->

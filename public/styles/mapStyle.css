@@ -71,7 +71,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.015s;
-    width: 33.3%;
+    width: 50%;
 }
 
 .tab button.deactive {
