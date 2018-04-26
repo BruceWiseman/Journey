@@ -43,12 +43,12 @@ app.get('/', function(req, res) {
 
 //render user policy
 app.get('/userpolicy', function(req, res) {
- res.render('pages/userpolicy');
+ res.render('pages/userpolicy',{loggedin:req.session.loggedin});
 });
 
 //==== search page
 app.get('/search', function(req, res) {
- res.render('pages/map');
+ res.render('pages/map',{loggedin:req.session.loggedin});
 });
 
 //==== profile page
@@ -64,7 +64,7 @@ app.get('/profile', function(req, res) {
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
 
-    res.render('pages/profile',{user : result});
+    res.render('pages/profile',{user : result},{loggedin:req.session.loggedin});
   });
 });
 
@@ -73,7 +73,7 @@ app.get("/edit",function(req,res) {
   if(!req.session.loggedin){res.redirect('/');return;}
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
-    res.render("pages/edit",{user : result});
+    res.render("pages/edit",{user : result},{loggedin:req.session.loggedin});
   });
 });
 
