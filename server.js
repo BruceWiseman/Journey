@@ -73,7 +73,7 @@ app.get("/edit",function(req,res) {
   if(!req.session.loggedin){res.redirect('/');return;}
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
-    res.render("pages/edit",{loggedin:req.session.loggedin},{user : result});
+    res.render("pages/edit",{user : result, loggedin : req.session.loggedin});
   });
 });
 
