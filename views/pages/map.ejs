@@ -35,29 +35,25 @@
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Name</button>
       <button class="tablinks" onclick="openCity(event, 'tab2')">Category</button>
-      <!-- <button class="tablinks" onclick="openCity(event, 'tab3')">Favourites</button> -->
     </div>
 
     <!-- Tab content -->
+
+    <!-- Text Search -->
     <form id ="tab1" class="tabcontent" onsubmit="return false">
       <input id = "placeSearch" type = "textbox" placeholder = " Search for a place...">
       <button id ="searchB" type="submit" onclick="codeAddress()"><i class="fa fa-search"></i></button>
     </form>
 
+    <!-- Category Search -->
     <form id ="tab2" class="tabcontent" onsubmit="return false">
             <div id = "list">
 
                   <% include ../partials/list %>
 
                   <input type="number" id = "quantity" placeholder = "Radius" min="1" max="50" value="0">
-                  <!-- <input type ="button" id ="categorySearch" onclick="categorySearch()"><i class="fa fa-search"></i></button> -->
-                  <!-- <input type = "button" value = "Search" onclick="categorySearch()"> -->
                   <button id ="searchB" type="submit" onclick="categorySearch()"><i class="fa fa-search"></i></button>
               </div>
-    </form>
-
-    <form id ="tab3" class="tabcontent">
-      <p class = "tabText">No Favourites to show!</p>
     </form>
 
     <script>
@@ -68,6 +64,7 @@
   </section>
   <!-- search tab end -->
 
+  <!-- Search Results Div -->
   <div id = "search">
     <div id = "searchResults">
       <h2 id = "resultsHeader">Results</h2>
@@ -79,7 +76,6 @@
 
 <!-- footer start  -->
 <footer id = "footer">
-
 </footer>
 <!-- footer end -->
 

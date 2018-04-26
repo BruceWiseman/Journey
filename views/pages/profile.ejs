@@ -2,7 +2,7 @@
   <!--Colour code: 39B54A -->
 <html>
 
-<!-- ===========================Header=========================== -->
+<!-- ===========================Head=========================== -->
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.62">
   <title>Profile - Journey</title>
@@ -19,10 +19,11 @@
 </head>
 
 <body>
-
+  <!-- header start -->
   <header id = "head">
     <% include ../partials/headerAlt %>
   </header>
+  <!-- header end -->
 
 <!-- ===========================profile content=========================== -->
 <section>
@@ -32,7 +33,6 @@
   <div class="left column">
     <div class="photo-left">
       <img class="photo" src= "<%= user.avatar %>" />
-      <!-- <img src="profile.png" alt="placeholder" style="width:50%"> -->
     </div>
 
     <h4 class="username">Hello, <%= user.name.first %> <%= user.name.last %></h4>
@@ -43,10 +43,6 @@
     </div>
 
     <div class="stats row">
-      <!-- <div class="stat column">
-        <p class="number-stat">62</p>
-        <p class="desc-stat">Amount of Searches:</p>
-      </div> -->
 
       <div class="stat column">
         <p class="desc-stat">Amount of Favourites:</p>
@@ -55,13 +51,6 @@
     </div>
 
     <div class="accountDetails">
-      <!-- <div class="name">
-        <p></p>
-      </div> -->
-      <!-- <div class="dob">
-        <p>Date of Birth: 01/01/01 </p>
-      </div> -->
-
       <div class="email">
         <p><b>Email: </b><%= user.email %></p>
       </div>
@@ -78,9 +67,7 @@
 
   </div>
 </div>
-
-
-
+<!-- profile info end -->
 
 <!-- FAVOURITES = RIGHT COLUMN  -->
     <div class="row-details">
@@ -88,7 +75,7 @@
         <h1 class="favourites">Favourites</h1>
         <div class="column-layout">
 
-
+      <!-- Output users favourites (name) -->
       <div class="sidebar-one">
         <h3>Name:</h3>
         <!-- name output  -->
@@ -97,6 +84,7 @@
         <% } %>
       </div>
 
+      <!-- Output users favourites (address) -->
       <div class="sidebar-two">
         <h3>Address:</h3>
         <% for (var i = 0; i < user.favourites.length; i++) { %>
@@ -104,23 +92,18 @@
         <% } %>
       </div>
 
-      <!-- <div class="sidebar-three">
-        <h3>Distance:</h3>
-      </div> -->
-
     </div>
   </div>
 </div>
 </div>
 </section>
+<!-- favourites end -->
+
+<!-- footer start -->
 <footer id = "footer">
 
 </footer>
-
-
-
-
-
+<!-- footer end -->
 
 <!-- =========================Modal Login/Register Forms==================== -->
 <!-- The Login Modal -->

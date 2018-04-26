@@ -1,3 +1,5 @@
+<!-- login modal form to allow users to login -->
+
 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
 <!-- Modal Content -->
@@ -6,19 +8,23 @@
     <img src="Images/logoJourney.png" alt="Avatar" class="avatar">
   </div>
 
+  <!-- email field (username) -->
   <div class="mContainer">
     <label for="uname"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="uname" required>
 
+    <!-- password field -->
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
+    <!-- login button -->
     <button id = "loginButton" type="submit">Login</button>
     <label id = "check">
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
+  <!-- cancel button  -->
   <div class="mContainer" style="background-color:#f1f1f1">
     <button id = "cancelButton" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>

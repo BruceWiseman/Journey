@@ -38,7 +38,7 @@ MongoClient.connect(url, function(err, database) {
 // use res.render to load up an ejs view file
 // ====home page
 app.get('/', function(req, res) {
- res.render('pages/home');
+ res.render('pages/home',{loggedin:req.session.loggedin});
 });
 
 //render user policy
@@ -70,6 +70,7 @@ app.get('/profile', function(req, res) {
 
 //edit profile page
 app.get("/edit",function(req,res) {
+  if(!req.session.loggedin){res.redirect('/');return;}
   db.collection('people').findOne({"login.username": req.session.user.login.username}, function(err, result) {
     if (err) throw err;
     res.render("pages/edit",{user : result});
