@@ -40,10 +40,13 @@ document.addEventListener('keydown', function(e) {
 
 
 function activateKonami() {
+
+  //Sets the backgroundImage to be whatever is specified
   document.body.style.backgroundImage = "url('images/code.png')";
 
+  //creates an audio variable and tells the code the location and filetype of the audio to be used
   var audio = new Audio('audio/konamiCode.mp3');
-  audio.play();
+  audio.play();   //this just tells the audio variable to play
 
-  alert("Destroyer of Code Activated");
+  alert("Destroyer of Code has Arrived");
 }
