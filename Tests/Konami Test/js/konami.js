@@ -53,4 +53,60 @@ function activateKonami() {
   audio.play();   //this just tells the audio variable to play
 
   alert("Destroyer of Code has Arrived");
+
+  //Function to animate Bruces head
+// ==============================
+  // var b;
+  // var dx = Math.random()*600;
+  // var dy = Math.random()*600;
+  // var x = 0;
+  // var y = 0;
+  //
+  // function init(){
+  //   b = document.getElementById('box')
+  //   moveIt();
+  // }
+  //
+  // window.requestAnimFrame = (function(){
+  //   return  window.requestAnimationFrame        ||
+  //           window.webkitRequestAnimationFrame  ||
+  //           window.mozRequestAnimationFrame     ||
+  //           window.oRequestAnimationFrame       ||
+  //           window.msRequestAnimationFrame      ||
+  //           function(/* function */ callback, /* DOMelement */ element){
+  //             window.setTimeout(callback, 1000 / 60);
+  //           };
+  // })();
+  //
+  // function moveIt(){
+  //   x += (dx - x) * 0.15;
+  //   y += (dy - y) * 0.15;
+  //   b.style.left = x + "px";
+  //   b.style.top = y + "px";
+  //   if(Math.abs(x-dx) < 1) {
+  //     dx = Math.random()*600;
+  //     dy = Math.random()*600;
+  //   }
+  //   requestAnimFrame(moveIt, b);
+  // }
+// ===============================
+
+
+//Function to animate Bruces head
+// ==============================
+// function myMove() {
+//   var element = document.getElementById("bruce")
+//   var pos = 0;
+//   var id = setInterval(frame, 10);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + 'px';
+//       elem.style.left = pos + 'px';
+//     }
+//   }
+// }
+// ===============================
 }
