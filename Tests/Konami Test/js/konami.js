@@ -44,6 +44,10 @@ function activateKonami() {
   //Sets the backgroundImage to be whatever is specified
   document.body.style.backgroundImage = "url('images/code.png')";
 
+  var bruce = new Image();
+  bruce.src = 'images/Konami.png'
+  document.body.append(bruce);
+
   //creates an audio variable and tells the code the location and filetype of the audio to be used
   var audio = new Audio('audio/konamiCode.mp3');
   audio.play();   //this just tells the audio variable to play
